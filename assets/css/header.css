@@ -1,0 +1,60 @@
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: calc(100% - 5px);
+  height: 36px;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register {
+  background-color: #00a0ff;
+}
+
+.btn-register:hover {
+  background-color: #007acc;
+}
+
+.btn-login {
+  background-color: #007bff;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
