@@ -93,3 +93,39 @@ document.addEventListener('DOMContentLoaded', function () {
   tysoCategory.classList.add('active') // Thêm class active vào phần "Tỷ số"
   tysoCategory.click() // Tự động kích hoạt sự kiện click của "Tỷ số"
 })
+function toggleSidebar () {
+  var sidebar = document.getElementById('sidebar')
+  var overlay = document.getElementById('overlay')
+
+  // Kiểm tra xem sidebar có đang mở không
+  if (sidebar.classList.contains('show')) {
+    sidebar.classList.remove('show') // Đóng sidebar
+    overlay.classList.remove('show') // Ẩn overlay
+  } else {
+    sidebar.classList.add('show') // Mở sidebar
+    overlay.classList.add('show') // Hiển thị overlay
+  }
+}
+
+const percentageElements = document.getElementsByClassName('percentage')
+
+const progressElements = document.getElementsByClassName('progress')
+
+for (let i = 0; i < percentageElements.length; i++) {
+  percentageElements[i].addEventListener('input', function () {
+    var percentageText = this.textContent.trim()
+    var percentageValue = parseFloat(percentageText) 
+
+    if (
+      !isNaN(percentageValue) &&
+      percentageValue >= 0 &&
+      percentageValue <= 100
+    ) {
+      progressElements[i].style.width = percentageValue + '%'
+    } else {
+      console.log('Invalid percentage value')
+    }
+  })
+}
+
+

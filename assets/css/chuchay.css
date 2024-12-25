@@ -4,24 +4,28 @@
   align-items: center; /* Căn giữa nội dung theo chiều dọc */
   background: #f9f9f9; /* Màu nền */
   border: 1px solid #ddd; /* Viền (tuỳ chọn) */
+  overflow: hidden;
 }
 
 .marquee {
   position: relative;
-  width: 100%; /* Hoặc một kích thước cụ thể */
-  overflow: hidden; /* Ẩn nội dung vượt ra ngoài vùng marquee */
+  display: flex;
+  gap: 100px;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
 }
 
 .marquee span {
   display: inline-block;
   font-size: 14px;
+  white-space: nowrap;
   color: #007aff; /* Màu chữ */
-  animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%); /* Chữ bắt đầu từ ngoài vùng marquee */
+    transform: translateX(20%); /* Chữ bắt đầu từ ngoài vùng marquee */
   }
   100% {
     transform: translateX(-100%); /* Chữ chạy hết sang bên trái của marquee */
