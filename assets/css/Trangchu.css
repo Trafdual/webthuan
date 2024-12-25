@@ -1,4 +1,260 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+  opacity: 0.6;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wallet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  left: 0;
+}
+
+/* home globby */
+.home-globby {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  height: auto;
+}
+
+.categories {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #2196f3;
+  font-size: 14px;
+}
+.category img {
+  width: 24px;
+  height: 24px;
+}
+
+.category.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 659px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.item {
+  border-radius: 10px;
+  height: auto;
+  padding: 0;
+  transition: all 0.3s ease;
+  max-width: calc(33.33% - 10px);
+  box-sizing: border-box;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tieudescore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.item-tyso {
+  border-radius: 10px;
+  height: auto;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(90deg, #289cfc, rgb(219, 219, 219));
+  width: 100%;
+}
+
+.doibongtong {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.divdoibong {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.doibong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.doibong img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.thanh {
+  width: 100%;
+  height: 10px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90e2, #007aff);
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+
+.percentage {
+  position: absolute;
+  right: 10px; /* Hoặc 'left: 50%' nếu muốn đặt ở giữa */
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+.footer {
+  margin-bottom: 70px;
+  padding: 5px;
+}
+
+.imgfooter {
+  width: 100%;
+  height: auto;
+}
+.divthuonghieu {
+  color: #2196f3;
+}
+.endorser-item {
+  align-items: center;
+  display: flex;
+  font-size: 4vw;
+  justify-content: space-between;
+}
+
+.endorser-item img {
+  width: 25vw;
+}
+
+.footer-license {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+}
+
+.footer-title {
+  font-size: 4vw;
+  margin-bottom: 2.5vw;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.license-list img {
+  height: 12vw;
+}
+
+.sns-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns-list a img {
+    height: 7vw;
+}
+
+.footer-des {
+    box-sizing: border-box;
+    text-align: justify;
+    color: #3caae2;
+    font-size: 3vw;
+    line-height: 1.2;
 }

@@ -1,15 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/navbar.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header"></div>
-    <div class="navbar"></div>
-    <script src="../assets/js/navbarheader.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/css/header.css" />
+        <link rel="stylesheet" href="../assets/css/navbar.css" />
+        <link rel="stylesheet" href="../assets/css/Trangchu.css" />
+        <title>Trang chủ</title>
+    </head>
+
+    <body>
+        <div class="header"></div>
+        <div class="body">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/test.jpe" alt="Slide 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/test.jpe" alt="Slide 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/test.jpe" alt="Slide 3" />
+                    </div>
+                </div>
+                <button class="carousel-control prev"
+                    onclick="prevSlide()">❮</button>
+                <button class="carousel-control next"
+                    onclick="nextSlide()">❯</button>
+            </div>
+            <div class="chuchay"></div>
+            <div class="wallet">
+                <a href>
+                    <div class="nav-item">
+                        <img
+                            src="../assets/images/trangchu.png"
+                            alt="Trang Chủ"
+                            class="icon" />
+                        <span> Chức Năng </span>
+                    </div>
+                </a>
+                <a href>
+                    <div class="nav-item">
+                        <img src="promo-icon.png" alt="Khuyến Mãi"
+                            class="icon" />
+                        <span> Thương Hiệu </span>
+                    </div>
+                </a>
+                <a href>
+                    <div class="nav-item">
+                        <img src="../assets/images/cskh.png" alt="VIP"
+                            class="icon" />
+                        <span> Hướng Dẫn </span>
+                    </div>
+                </a>
+                <a href>
+                    <div class="nav-item">
+                        <img src="../assets/images/daily.png" alt="Tải APP"
+                            class="icon" />
+                        <span> Giới Thiệu </span>
+                    </div>
+                </a>
+                <a href>
+                    <div class="nav-item">
+                        <img
+                            src="../assets/images/taikhoan.png"
+                            alt="Tài Khoản"
+                            class="icon" />
+                        <span> Đại Lý </span>
+                    </div>
+                </a>
+            </div>
+            <div class="home-globby">
+                <div class="categories">
+                    <div class="category active" id="tyso">
+                        <img src="../assets/images/bong.png" alt />
+                        <span>Tỷ số</span>
+                    </div>
+                    <div class="category" id="casino">
+                        <img src="../assets/images/casino.png" alt />
+                        <span>Casino</span>
+                    </div>
+                    <div class="category" id="nohu">
+                        <img src="../assets/images/nohu.png" alt />
+                        <span>Nổ Hũ</span>
+                    </div>
+                    <div class="category" id="xocdia">
+                        <img src="../assets/images/xocdia.png" alt />
+                        <span>Xóc đĩa</span>
+                    </div>
+                    <div class="category" id="xoso">
+                        <img src="../assets/images/xoso.png" alt />
+                        <span>Xổ số</span>
+                    </div>
+                </div>
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="../assets/images/imgfooter.webp" alt class="imgfooter" />
+            <div class="divthuonghieu">
+                <h3>Đại Sứ Thương Hiệu</h3>
+                <div class="endorser-list">
+                    <div class="endorser-item">
+                        <div>Manny Pacquiao</div>
+                        <div>Năm 2024 - 2025</div>
+                        <div>
+                            <img src="../assets/images/chuky1.png" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="endorser-item">
+                        <div>Andrea Pirlo</div>
+                        <div>Năm 2024 - 2025</div>
+                        <div>
+                            <img src="../assets/images/chuky2.png" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="endorser-item">
+                        <div>Roberto Carlos</div>
+                        <div>Năm 2023 - 2024</div>
+                        <div>
+                            <img src="../assets/images/chuky3.png" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-license">
+                    <div>
+                        <div class="footer-title">Giấy phép</div>
+                        <div class="license-list">
+                            <img src="../assets/images/anhfoot1.webp" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title">Chơi có trách nhiệm</div>
+                        <div class="license-list">
+                            <img src="../assets/images/anhfoot2.webp" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title">Bảo vệ</div>
+                        <div class="license-list">
+                            <img src="../assets/images/anhfoot3.webp" alt
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-sns">
+                    <div class="footer-title">theo dõi chúng tôi</div>
+                    <div class="sns-list">
+                        <a
+                            href="https://www.facebook.com/pb1jun88"
+                            target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src="../assets/images/facebook.webp"
+                                loading="lazy" /></a><a
+                            href="https://553389.com/Youtube"
+                            target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a><a
+                            href="https://553389.com/giaitritonghop"
+                            target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a><a href="/" target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a><a href="/" target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a><a href="/" target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a><a href="/" target="_blank"
+                            rel="noreferrer"><img
+                                alt
+                                src
+                                loading="lazy" /></a>
+                    </div>
+                </div>
+                <div class="footer-des">jun888t.red thuộc sở hữu và được
+                    điều hành bởi Cyber &ZeroWidthSpace;&ZeroWidthSpace;Labs
+                    B.V., một công ty được đăng ký tại Curacao với Mã số công ty
+                    166785 và có Địa chỉ đã đăng ký tại: Zuikertuintjeweg Z/N,
+                    Curacao. Cyber &ZeroWidthSpace;&ZeroWidthSpace;Labs B.V.
+                    đang chờ đơn đăng ký của GCB. Trust Service và được đại diện
+                    bởi <a href="https://igagroup.com"
+                        target="blank">https://igagroup.com</a></div>
+            </div>
+        </div>
+        <div class="navbar"></div>
+        <script src="../assets/js/navbarheader.js"></script>
+        <script src="../assets/js/Trangchu.js"></script>
+    </body>
 </html>
