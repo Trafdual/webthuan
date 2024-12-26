@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/login.css">
-    <title>Login</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/login.css">
+        <title>Login</title>
+    </head>
 
-<body>
-    <div class="login-container">
-        <div class="login-header">
-            <div class="btn-right">
-                <img src="/assets/images/btn-close.png" alt="" class="btn-close">
-            </div>
-            <div class="top-img">
-                <img src="/assets/images/top-img.png" alt="">
-            </div>
-        </div>
-
-        <div class="login-input">
-            <div class="login-input-field">
-                <img src="/assets/images/account.png" alt="">
-                <input type="text" placeholder="Vui lòng nhập tài khoản">
-            </div>
-            <div class="login-input-field">
-                <img src="/assets/images/password.png" alt="">
-                <input type="password" placeholder="Vui lòng nhập mật mã">
-                <img src="/assets/images/hidepass.png" alt="" style="width: 30px; max-width: 100%; height: auto; margin: 0;">
-            </div>
-        </div>
-        <div class="login-warning">
-            <img src="/assets/images/warning-login-register.png" alt="">
-        </div>
-        <button class="login-btn" onclick="login()">Đăng nhập phiên bản 1</button>
-        <div class="donthaveacc">
-            <p>Bạn chưa có tài khoản? <a href="../register/register.html">Đăng ký ngay</a></p>
-        </div>
-        <div class="bottom-links">
-            <div class="bottom-link-item">
-                <div class="link-title">Quên mật khẩu</div>
-                <div class="icon-row">
-                    <div class="icon">
-                        <img src="/assets/images/email.png" alt="Email">
-                        <div class="icon-name">EMAIL</div>
+    <body>
+        <div class="login-container">
+            <div class="login-header">
+                <a href="../trangchu/trangchu.html">
+                    <div class="btn-right">
+                        <img src="/assets/images/btn-close.png" alt
+                            class="btn-close">
                     </div>
-                    <div class="icon">
-                        <img src="/assets/images/phone.png" alt="SMS">
-                        <div class="icon-name">SMS</div>
+                </a>
+                <div class="top-img">
+                    <img src="/assets/images/top-img.png" alt>
+                </div>
+            </div>
+
+            <div class="login-input">
+                <div class="login-input-field">
+                    <img src="/assets/images/account.png" alt>
+                    <input type="text" placeholder="Vui lòng nhập tài khoản">
+                </div>
+                <div class="login-input-field">
+                    <img src="/assets/images/password.png" alt>
+                    <input type="password" placeholder="Vui lòng nhập mật mã">
+                    <img src="/assets/images/hidepass.png" alt
+                        style="width: 30px; max-width: 100%; height: auto; margin: 0;">
+                </div>
+            </div>
+            <div class="login-warning">
+                <img src="/assets/images/warning-login-register.png" alt>
+            </div>
+            <button class="login-btn" onclick="login()">Đăng nhập phiên bản
+                1</button>
+            <div class="donthaveacc">
+                <p>Bạn chưa có tài khoản? <a
+                        href="../register/register.html">Đăng ký ngay</a></p>
+            </div>
+            <div class="bottom-links">
+                <div class="bottom-link-item">
+                    <div class="link-title">Quên mật khẩu</div>
+                    <div class="icon-row">
+                        <div class="icon">
+                            <img src="/assets/images/email.png" alt="Email">
+                            <div class="icon-name">EMAIL</div>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/images/phone.png" alt="SMS">
+                            <div class="icon-name">SMS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-link-item">
+                    <div class="link-title">
+                        <img src="/assets/images/download.png"
+                            alt="Download Icon"> Tải App
+                    </div>
+                    <div class="icon-row">
+                        <div class="icon">
+                            <img src="/assets/images/chplay.png"
+                                alt="Google Play">
+                            <div class="icon-name">GOOGLE PLAY</div>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/images/app-store.png"
+                                alt="App Store">
+                            <div class="icon-name">APP STORE</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bottom-link-item">
-                <div class="link-title">
-                    <img src="/assets/images/download.png" alt="Download Icon"> Tải App
-                </div>
-                <div class="icon-row">
-                    <div class="icon">
-                        <img src="/assets/images/chplay.png" alt="Google Play">
-                        <div class="icon-name">GOOGLE PLAY</div>
-                    </div>
-                    <div class="icon">
-                        <img src="/assets/images/app-store.png" alt="App Store">
-                        <div class="icon-name">APP STORE</div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <script src="../assets/js/login.js"></script>
-</body>
+        </div>
+        <script src="../assets/js/login.js"></script>
+    </body>
 
 </html>
