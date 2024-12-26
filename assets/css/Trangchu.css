@@ -68,7 +68,7 @@ body {
 .home-globby {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 20px;
   padding: 10px;
   height: auto;
 }
@@ -77,7 +77,7 @@ body {
   width: 100px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .category {
@@ -85,14 +85,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  
   background-color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 5px 5px;
+  border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #2196f3;
-  font-size: 14px;
+  color: #00abe5;
+  font-size: 12px;
   width: 100%;
 }
 .category img {
@@ -101,7 +101,7 @@ body {
 }
 
 .category.active {
-  background-color: #2196f3;
+  background-color: #00abe5;
   color: white;
 }
 
@@ -109,7 +109,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  height: 659px;
+  height: 350px;
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
@@ -140,72 +140,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.tieudescore {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
 
-.item-tyso {
-  border-radius: 10px;
-  height: auto;
-  padding: 0;
-  transition: all 0.3s ease;
-  box-sizing: border-box;
-  padding: 5px;
-  background: linear-gradient(90deg, #289cfc, rgb(219, 219, 219));
-  width: 100%;
-  font-size: 15px;
-}
-
-.doibongtong {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.divdoibong {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.doibong {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.doibong img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
-.doibong p{
-  margin: 0;
-}
-.thanh {
-  width: 100%;
-  height: 10px;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress {
-  height: 100%;
-  background: linear-gradient(90deg, #4a90e2, #007aff);
-  border-radius: 5px 0 0 5px;
-  position: relative;
-}
-
-.percentage {
-  position: absolute;
-  right: 10px; /* Hoặc 'left: 50%' nếu muốn đặt ở giữa */
-  color: black;
-  font-size: 10px;
-  font-weight: bold;
-}
 .footer {
   margin-bottom: 70px;
   padding: 5px;
@@ -216,7 +151,7 @@ body {
   height: auto;
 }
 .divthuonghieu {
-  color: #2196f3;
+  color: #00abe5;
 }
 .endorser-item {
   align-items: center;
@@ -247,23 +182,20 @@ body {
 }
 
 .sns-list {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sns-list a img {
-    height: 7vw;
+  height: 7vw;
 }
 
 .footer-des {
-    box-sizing: border-box;
-    text-align: justify;
-    color: #3caae2;
-    font-size: 3vw;
-    line-height: 1.2;
+  box-sizing: border-box;
+  text-align: justify;
+  color: #3caae2;
+  font-size: 3vw;
+  line-height: 1.2;
 }
 
-.divtyso p{
-  margin: 5px;
-}
