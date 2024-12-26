@@ -101,18 +101,25 @@ function toggleSidebar () {
   var sidebar = document.getElementById('sidebar')
   var overlay = document.getElementById('overlay')
 
+  // Kiểm tra kích thước màn hình
+  var isLargeScreen = window.matchMedia('(min-width: 450px)').matches
+
   if (sidebar.classList.contains('show')) {
     sidebar.classList.remove('show')
     overlay.classList.remove('show')
-    sidebar.style.opacity = 0
-    sidebar.style.transform = 'translateX(-20px)'
 
+    if (isLargeScreen) {
+      sidebar.style.opacity = 0
+      sidebar.style.transform = 'translateX(-20px)'
+    }
   } else {
     sidebar.classList.add('show')
     overlay.classList.add('show')
-    sidebar.style.opacity = 1
-    sidebar.style.transform = 'translateX(240px)'
 
+    if (isLargeScreen) {
+      sidebar.style.opacity = 1
+      sidebar.style.transform = 'translateX(240px)'
+    }
   }
 }
 
