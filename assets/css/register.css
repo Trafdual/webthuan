@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.register-container {
+    background: url(/assets/images/bgrloginregister.jpg) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.register-header {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register-header .btn-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.register-header .btn-close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.register-header .top-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-input-field {
+    position: relative;
+    text-align: left;
+}
+
+.register-input-field label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #24aae1;
+}
+
+.register-input-field label img {
+    width: 20px;
+    height: 20px;
+}
+
+.register-input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-input-field small {
+    color: #999;
+    margin-top: 5px;
+    display: block;
+}
+
+.register-input-field .toggle-password {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+.register-input-field .phone-input {
+    display: flex;
+}
+
+.register-input-field .phone-input select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-terms {
+    font-size: 12px;
+    text-align: left;
+
+}
+
+.register-terms input {
+    margin-right: 10px;
+}
+
+.register-terms a {
+    text-decoration: none;
+    color: #00aae6;
+}
+
+.register-btn {
+    width: 100%;
+    background: linear-gradient(to bottom, #aed7ea, #0ea5f7);
+    color: #fff;
+    border: 2px solid #1a73c5;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.register-term {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
