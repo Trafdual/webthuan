@@ -174,9 +174,12 @@ body {
   gap: 10px;
 }
 .doibong img {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+}
+.doibong p{
+  margin: 0;
 }
 .thanh {
   width: 100%;
@@ -257,4 +260,8 @@ body {
     color: #3caae2;
     font-size: 3vw;
     line-height: 1.2;
+}
+
+.divtyso p{
+  margin: 5px;
 }
