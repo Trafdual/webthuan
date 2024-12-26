@@ -104,9 +104,15 @@ function toggleSidebar () {
   if (sidebar.classList.contains('show')) {
     sidebar.classList.remove('show')
     overlay.classList.remove('show')
+    sidebar.style.opacity = 0
+    sidebar.style.transform = 'translateX(-20px)'
+
   } else {
     sidebar.classList.add('show')
     overlay.classList.add('show')
+    sidebar.style.opacity = 1
+    sidebar.style.transform = 'translateX(240px)'
+
   }
 }
 

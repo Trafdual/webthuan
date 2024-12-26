@@ -85,7 +85,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   background-color: white;
   padding: 5px 5px;
   border-radius: 15px;
@@ -139,7 +139,6 @@ body {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .footer {
   margin-bottom: 70px;
@@ -199,3 +198,42 @@ body {
   line-height: 1.2;
 }
 
+@media screen and (min-width: 450px) {
+  body {
+    margin: 0 auto;
+    width: 390px;
+    background-color: gray;
+  }
+  .endorser-item,
+  .footer-title,
+  .footer-des {
+    font-size: 15px;
+  }
+  .endorser-item img {
+    width: 100px;
+  }
+  .license-list img {
+    height: 50px;
+  }
+  .sns-list a img {
+    height: 40px;
+  }
+
+  .body,
+  .footer {
+    background-color: white;
+  }
+  .footer {
+    margin-bottom: 65px;
+  }
+  .marquee-container {
+    width: unset !important;
+  }
+  .carousel {
+    margin-top: 40px;
+    background-color: white;
+  }
+  .footer-license {
+    margin-bottom: 20px;
+  }
+}
