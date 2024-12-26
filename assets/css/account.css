@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .account-container {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -17,6 +21,11 @@
     margin-bottom: 15px;
     padding: 20px;
     overflow: hidden;
+  }
+
+  .account-header a {
+    text-decoration: none;
+    color: #fff;
   }
 
 .account-function {
