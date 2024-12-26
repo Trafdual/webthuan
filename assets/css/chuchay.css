@@ -5,6 +5,7 @@
   background: #f9f9f9; /* Màu nền */
   border: 1px solid #ddd; /* Viền (tuỳ chọn) */
   overflow: hidden;
+  height: 30px;
 }
 
 .marquee {

@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/register.css" />
-    <title>Register</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/register.css" />
+        <title>Register</title>
+    </head>
 
-<body>
-    <div class="register-container">
-        <div class="register-header">
-            <div class="btn-right">
-                <img src="/assets/images/btn-close.png" alt="" class="btn-close" />
-            </div>
-            <div class="top-img">
-                <img src="/assets/images/top-img.png" alt="" />
-            </div>
-        </div>
-        <form class="register-form">
-            <div class="register-input-field">
-                <label for="username">
-                    <img src="/assets/images/register-account.png" alt="" />
-                    Tên đăng nhập</label>
-                <input type="text" id="username" placeholder="Vui lòng nhập tài khoản" />
-                <small>Vui lòng nhập Id người chơi đăng ký</small>
-            </div>
-            <div class="register-input-field">
-                <label for="password">
-                    <img src="/assets/images/register-pass.png" alt="">
-                    Mật khẩu</label>
-                <input type="password" id="password" placeholder="Mật khẩu" />
-                <img src="/assets/images/hidepass.png" alt="Show/Hide" class="toggle-password" />
-                <small>Mật khẩu phải bao gồm từ 8-20 ký tự (số, chữ in, chữ thường, ký tự
-                    đặc biệt).</small>
-            </div>
-            <div class="register-input-field">
-                <label for="confirm-password">
-                    <img src="/assets/images/register-pass.png" alt="">
-                    Xác nhận lại mật khẩu</label>
-                <input type="password" id="confirm-password" placeholder="Xác nhận lại mật khẩu" />
-                <img src="/assets/images/hidepass.png" alt="Show/Hide" class="toggle-password" />
-                <small>Vui lòng nhập lại mật khẩu.</small>
-            </div>
-            <div class="register-input-field">
-                <label for="email">
-                    <img src="/assets/images/register-email.png" alt="">
-                    Địa chỉ Email</label>
-                <input type="email" id="email" placeholder="Nhập địa chỉ email" />
-                <small>Điền chính xác email để lấy mật khẩu khi bạn quên.</small>
-            </div>
-            <div class="register-input-field">
-                <label for="phone">
-                    <img src="/assets/images/register-phone.png" alt="">
-                    Số điện thoại</label>
-                <div class="phone-input">
-                    <select id="country-code">
-                        <option value="+84">+84</option>
-                        <option value="+1">+1</option>
-                        <option value="+91">+91</option>
-                    </select>
-                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" />
+    <body>
+        <div class="register-container">
+            <div class="register-header">
+                <a href="../trangchu/trangchu.html">
+                    <div class="btn-right">
+                        <img src="/assets/images/btn-close.png" alt
+                            class="btn-close" />
+                    </div>
+                </a>
+                <div class="top-img">
+                    <img src="/assets/images/top-img.png" alt />
                 </div>
-                <small>Số điện thoại không được bắt đầu bằng số 0, bạn cần điền chính xác
-                    số điện thoại để có thể khôi phục lại mật khẩu</small>
             </div>
+            <form class="register-form">
+                <div class="register-input-field">
+                    <label for="username">
+                        <img src="/assets/images/register-account.png" alt />
+                        Tên đăng nhập</label>
+                    <input type="text" id="username"
+                        placeholder="Vui lòng nhập tài khoản" />
+                    <small>Vui lòng nhập Id người chơi đăng ký</small>
+                </div>
+                <div class="register-input-field">
+                    <label for="password">
+                        <img src="/assets/images/register-pass.png" alt>
+                        Mật khẩu</label>
+                    <input type="password" id="password"
+                        placeholder="Mật khẩu" />
+                    <img src="/assets/images/hidepass.png" alt="Show/Hide"
+                        class="toggle-password" />
+                    <small>Mật khẩu phải bao gồm từ 8-20 ký tự (số, chữ in, chữ
+                        thường, ký tự
+                        đặc biệt).</small>
+                </div>
+                <div class="register-input-field">
+                    <label for="confirm-password">
+                        <img src="/assets/images/register-pass.png" alt>
+                        Xác nhận lại mật khẩu</label>
+                    <input type="password" id="confirm-password"
+                        placeholder="Xác nhận lại mật khẩu" />
+                    <img src="/assets/images/hidepass.png" alt="Show/Hide"
+                        class="toggle-password" />
+                    <small>Vui lòng nhập lại mật khẩu.</small>
+                </div>
+                <div class="register-input-field">
+                    <label for="email">
+                        <img src="/assets/images/register-email.png" alt>
+                        Địa chỉ Email</label>
+                    <input type="email" id="email"
+                        placeholder="Nhập địa chỉ email" />
+                    <small>Điền chính xác email để lấy mật khẩu khi bạn
+                        quên.</small>
+                </div>
+                <div class="register-input-field">
+                    <label for="phone">
+                        <img src="/assets/images/register-phone.png" alt>
+                        Số điện thoại</label>
+                    <div class="phone-input">
+                        <select id="country-code">
+                            <option value="+84">+84</option>
+                            <option value="+1">+1</option>
+                            <option value="+91">+91</option>
+                        </select>
+                        <input type="tel" id="phone"
+                            placeholder="Nhập số điện thoại" />
+                    </div>
+                    <small>Số điện thoại không được bắt đầu bằng số 0, bạn cần
+                        điền chính xác
+                        số điện thoại để có thể khôi phục lại mật khẩu</small>
+                </div>
 
-            <div class="register-term">
-                <label class="custom-checkbox">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    Tôi đã đủ tuổi và đồng ý <a href="#">Chính sách thành viên</a>.
-                </label>
-            </div>
-            
-            <button type="submit" class="register-btn">Đăng ký phiên bản 1</button>
-        </form>
-    </div>
-</body>
+                <div class="register-term">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Tôi đã đủ tuổi và đồng ý <a href="#">Chính sách thành
+                            viên</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="register-btn">Đăng ký phiên bản
+                    1</button>
+            </form>
+        </div>
+    </body>
 
 </html>

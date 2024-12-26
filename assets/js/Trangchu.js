@@ -106,9 +106,15 @@ function toggleSidebar () {
   }
 }
 
-const percentage = 90.91
-document.querySelectorAll('.progress').style.width = `${percentage}%`
-document.querySelectorAll('.percentage').textContent = `${percentage}%`
+document.addEventListener('DOMContentLoaded', () => {
+  const percentage = 90.91
 
+  document.querySelectorAll('.progress').forEach(progress => {
+    progress.style.width = `${percentage}% !important`
+  })
 
+  document.querySelectorAll('.percentage').forEach(percentageElem => {
+    percentageElem.textContent = `${percentage}%`
+  })
+})
 
