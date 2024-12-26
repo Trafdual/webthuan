@@ -40,7 +40,7 @@ body {
     width: 100%;
 }
 
-.input-field {
+.login-input-field {
     display: flex;
     align-items: center;
     background: #fff;
@@ -50,13 +50,14 @@ body {
     margin: 10px 0;
 }
 
-.input-field img {
+.login-input-field img {
     width: 25px;
-    height: 25px;
     margin-right: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-.input-field input {
+.login-input-field input {
     border: none;
     outline: none;
     flex: 1;
@@ -75,7 +76,8 @@ body {
     width: 100%;
     background: linear-gradient(to bottom, #aed7ea, #0ea5f7);
     color: #fff;
-    border: 2px solid #1a73c5;
+    /* border: 2px solid #1a73c5; */
+    border: none;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
