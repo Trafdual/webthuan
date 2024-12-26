@@ -61,6 +61,10 @@ function loadContent (category, filePath) {
     })
     .then(html => {
       content.innerHTML = html
+      if (category === 'tyso') {
+        updateProgress()
+        btntabscore()
+      }
     })
     .catch(error => {
       console.error(error)
@@ -106,15 +110,48 @@ function toggleSidebar () {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const percentage = 90.91
+function updateProgress () {
+  const percentage = 60
 
   document.querySelectorAll('.progress').forEach(progress => {
-    progress.style.width = `${percentage}% !important`
+    progress.style.width = `${percentage}%`
   })
 
   document.querySelectorAll('.percentage').forEach(percentageElem => {
     percentageElem.textContent = `${percentage}%`
   })
-})
+}
 
+function lichthidau () {
+  const ketqua = document.getElementById('ketqua')
+  const lichthidau = document.getElementById('lichthidau')
+  ketqua.style.display = 'none'
+  lichthidau.style.display = 'block'
+}
+
+function ketqua () {
+  const ketqua = document.getElementById('ketqua')
+  const lichthidau = document.getElementById('lichthidau')
+  ketqua.style.display = 'block'
+  lichthidau.style.display = 'none'
+}
+
+function btntabscore () {
+  const btnKetQua = document.getElementById('btnketqua')
+  const btnLichThiDau = document.getElementById('btnlichthidau')
+
+  function activateTab (activeButton, inactiveButton) {
+    activeButton.classList.add('active-tab')
+    inactiveButton.classList.remove('active-tab')
+  }
+
+  btnKetQua.addEventListener('click', function () {
+    ketqua()
+    activateTab(btnKetQua, btnLichThiDau)
+  })
+
+  btnLichThiDau.addEventListener('click', function () {
+    lichthidau()
+    activateTab(btnLichThiDau, btnKetQua)
+  })
+}

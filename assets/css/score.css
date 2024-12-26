@@ -1,0 +1,160 @@
+.tieudescore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.tabscore {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.tabscore button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  font-weight: 700;
+  font-size: 13px;
+  color: #333;
+  transition: color 0.3s ease; /* Đổi màu chữ mượt */
+}
+
+.tabscore button.active-tab::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00abe5;
+  transition: all 0.3s ease; /* Mượt mà khi thay đổi vị trí và kích thước */
+}
+
+.tabscore button.active-tab {
+  color: #00abe5;
+}
+
+.tabscore button:not(.active-tab)::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #00abe5;
+  transition: all 0.3s ease; /* Mượt mà khi hover */
+}
+
+.tabscore button:hover:not(.active-tab)::after {
+  left: 0;
+  width: 100%;
+}
+
+.divitemtyso {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-tyso {
+  border-radius: 10px;
+  height: auto;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(30deg, #00abe5, rgb(238, 238, 238));
+  width: 100%;
+  font-size: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doibongtong {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.divdoibong {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.doibong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.doibong img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.doibong p {
+  margin: 0;
+}
+.thanh {
+  width: 100%;
+  height: 10px;
+  background-color: #a4a3a3;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #5da6fa, #00abe5);
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+
+.percentage {
+  position: absolute;
+  right: 20px; /* Hoặc 'left: 50%' nếu muốn đặt ở giữa */
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.divtyso p {
+  margin: 5px;
+}
+
+.lichtyso {
+  width: 100%;
+  position: sticky;
+  top: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.item-lich {
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 15px;
+  background: linear-gradient(30deg, #00abe5, rgb(243, 243, 243));
+  flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.item-lich p {
+  margin: 0;
+}
