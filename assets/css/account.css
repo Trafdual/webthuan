@@ -1,14 +1,12 @@
-body {
+body{
   margin: 0;
 }
-
 .account-container {
   overflow: hidden;
   background-color: #f1f1f1;
-  height: 100vh;
-}
-
-.header-text {
+  height: 80%;
+  margin-bottom: 60px;
+  overflow-y: auto;
 }
 
 .account-header {
@@ -88,12 +86,40 @@ body {
 .function-name p {
   text-align: center;
   font-size: 13px;
+  margin: 0;
 }
 
-.empty-box {
+.menu-block {
   background-color: #fff;
   border-radius: 30px 30px 0 0;
-  height: 100vh;
+  padding: 15px 20px;
+  overflow-y: auto;
+}
+
+.menu-block-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #ececec solid;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #000;
+  gap: 10px;
+}
+
+.menu-block-item:last-child {
+  border: none;
+}
+
+.menu-item-icon {
+  width: 30px;
+  height: auto;
+}
+
+.menu-item-name {
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  text-align: center;
 }
 
 .namedx {
@@ -114,6 +140,6 @@ body {
   display: flex;
   font-size: 32px;
 }
-.balance img{
+.balance img {
   height: 32px;
 }
