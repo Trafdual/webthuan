@@ -68,7 +68,7 @@ body {
 .home-globby {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
   padding: 10px;
   height: auto;
 }
@@ -93,6 +93,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #2196f3;
   font-size: 14px;
+  width: 100%;
 }
 .category img {
   width: 24px;
@@ -155,6 +156,7 @@ body {
   padding: 5px;
   background: linear-gradient(90deg, #289cfc, rgb(219, 219, 219));
   width: 100%;
+  font-size: 15px;
 }
 
 .doibongtong {
