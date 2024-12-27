@@ -1,0 +1,169 @@
+.hidden {
+  display: none !important;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.tieudemodal {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Đưa tiêu đề ra giữa */
+  position: relative; /* Để định vị chính xác nút đóng modal */
+}
+
+.close-modal {
+  position: absolute; /* Đặt nút vào vị trí cụ thể */
+  left: 10px;
+  top: 50%; /* Căn chỉnh theo chiều dọc */
+  transform: translateY(-50%); /* Đưa nút về đúng giữa chiều dọc */
+  background: #00abe5;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  width: 24px; /* Kích thước nút */
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tieudemodal h4 {
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+  font-size: 18px; /* Tùy chỉnh kích thước */
+  color: black; /* Màu tiêu đề (có thể tùy chỉnh theo ý muốn) */
+}
+
+.divtysomodal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #00abe5;
+}
+.divtysomodal p {
+  margin: 0;
+}
+.teamtime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.teamtime img {
+  width: 60px;
+  height: 60px;
+}
+.teamtime p {
+  margin: 0;
+}
+.sotien {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sotien p {
+  margin: 0;
+}
+.sotien div {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #cacaca;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.options button {
+  flex: 0 1 calc(33.33% - 10px);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #00abe5;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.divtyle{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.tieudetyle{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.tieudetyle p{
+    margin: 5px;
+    font-weight: bold;
+
+}
+.tyle{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.tyle p{
+    margin: 5px;
+}
+.btnmodal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    gap: 10px;
+}
+.btnhuy{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #bebebe;
+}
+.place-bet{
+     border-radius: 20px;
+     border: none;
+     background: linear-gradient(50deg, #3c97ff, #00abe5);
+     padding: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: white;
+}
+
