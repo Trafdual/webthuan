@@ -2,9 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -13,8 +10,12 @@ body {
     cover;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 15px;
   min-height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .login-header {
@@ -146,7 +147,7 @@ body {
 }
 
 .icon .icon-name {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 400;
 }
 
