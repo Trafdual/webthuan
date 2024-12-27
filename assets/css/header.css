@@ -1,6 +1,6 @@
 .header1 {
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 10px;
   position: fixed;
@@ -64,24 +64,35 @@
   height: 30px;
   border-radius: 50%;
 }
-.headerdn{
+.headerdn {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.rankname, .chatxu{
+.rankname,
+.chatxu {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.rankname img{
+.rankname img {
   height: 30px;
 }
-.chatxu span{
+.chatxu span {
   color: #000;
   font-size: 18px;
   font-weight: 700;
 }
-.chatxu img{
+.chatxu img {
   height: 30px;
+}
+
+@media screen and (min-width: 450px) {
+  .header1 {
+    width: 390px;
+    left: unset;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }

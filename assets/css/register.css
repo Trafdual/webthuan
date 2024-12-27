@@ -1,11 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .register-container {
@@ -77,6 +72,7 @@ body {
   padding: 10px 7px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .register-input-field small {
@@ -179,4 +175,12 @@ body {
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 450px) {
+    body {
+      margin: 0 auto;
+      width: 450px;
+      background-color: gray;
+    }
   }
