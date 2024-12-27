@@ -6,11 +6,11 @@ const leftArrow = document.getElementById('left-arrow');
 
         function updateVisibility() {
             icons.forEach((icon, index) => {
-                icon.style.display = (index >= currentStartIndex && index < currentStartIndex + 3) ? 'flex' : 'none';
+                icon.style.display = (index >= currentStartIndex && index < currentStartIndex + 4) ? 'flex' : 'none';
             });
 
             leftArrow.classList.toggle('disabled', currentStartIndex === 0);
-            rightArrow.classList.toggle('disabled', currentStartIndex + 3 >= icons.length);
+            rightArrow.classList.toggle('disabled', currentStartIndex + 4 >= icons.length);
         }
 
         leftArrow.addEventListener('click', () => {
@@ -21,7 +21,7 @@ const leftArrow = document.getElementById('left-arrow');
         });
 
         rightArrow.addEventListener('click', () => {
-            if (currentStartIndex + 3 < icons.length) {
+            if (currentStartIndex + 4 < icons.length) {
                 currentStartIndex++;
                 updateVisibility();
             }

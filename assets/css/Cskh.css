@@ -1,15 +1,16 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    max-width: 450px;
-    background: linear-gradient(to bottom, #d1f1fc, #ffffff);
+    background: linear-gradient(to bottom, #d1f7ff, #c9dee6);
     height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+
 }
 
 .header {
@@ -29,7 +30,7 @@ body {
     font-size: 14px;
     margin-top: 5px;
 }
-.customer-service img{
+.customer-service img, .high-speed-links img{
     width: 85%;
     margin: 20px auto 10px;
     display: flex;
@@ -93,28 +94,33 @@ body {
     margin: 0;
 }
 .container-hotro {
-    background-color: #d9f2ff;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Đặt container làm tham chiếu */
+    text-align: center; /* Căn giữa nội dung (tuỳ chọn) */
+  }
+  .khung {
+    width: 430px; /* Kích thước ảnh (tuỳ chỉnh nếu cần) */
+    height: auto; /* Duy trì tỉ lệ ảnh */
+    display: block; /* Đảm bảo ảnh là khối để không chồng chéo */
+  }
+.container-hotro h4 {
+    position: absolute;
+    top: -10px;
+    left: 33%;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #0071bf;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 30%;
 }
-
-.container-hotro h2 {
-    margin: 0;
-    margin-bottom: 20px;
-    color: #0077b6;
-}
-
 .icon-container {
-    display: flex;
-    justify-content: space-around;
+    position: absolute; /* Đặt icon-container đè lên ảnh */
+    top: 40%; 
+    display: flex; /* Sử dụng flexbox để sắp xếp các item */
     align-items: center;
-}
-
+    gap: 60px;
+    
+  }
 .icon {
     display: flex;
     flex-direction: column;
@@ -138,7 +144,7 @@ body {
     margin-bottom: 10px;
 }
 .icon span {
-    padding: 5px 10px;
+    padding: 5px 0px;
     color: #fff;
     border-radius: 15px;
     background-color: #0077b6;
@@ -188,16 +194,17 @@ body {
 }
 
 .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    gap:10px;
+    padding: 0px 25px;
 }
 
 .links button {
-    background-color: #0071bf;
+    background-color: #00a1e4;
     color: #fff;
-    border: none;
+    border: 2px solid #ffffff;
+
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 14px;
@@ -208,5 +215,6 @@ body {
       margin: 0 auto;
       width: 450px;
       background-color: gray;
+      overflow-x: hidden;
     }
   }
