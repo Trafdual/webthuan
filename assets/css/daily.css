@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: gray;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+width: 450px;
+  padding: 16px;
+  background-color: #1c1c3b;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.info .username {
+  color: #ff3b3b;
+  font-weight: bold;
+}
+
+.info .role {
+  background: #3b82f6;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* Link section */
+.link-section {
+  margin-bottom: 16px;
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f1f45;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.link-box span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 24px);
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.qr-section {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.qr-code {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+.qr-info p {
+  margin: 0;
+}
+
+.save-qr {
+  margin-top: 8px;
+  background-color: #3b82f6;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Statistics cards */
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card {
+  flex: 1;
+  background: linear-gradient(45deg, #6a5af9, #956af8);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  font-size: 14px;
+}
+
+/* Menu buttons */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu button {
+  flex: 1;
+  background: #1f1f45;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  margin: 0 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: #3b82f6;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+  }
+}
