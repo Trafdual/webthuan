@@ -41,7 +41,7 @@ a{
 
 @media screen and (min-width: 450px) {
   .navbar1{
-    width: 390px;
+    width: 450px;
     left: unset;
   }
 }

@@ -1,9 +1,14 @@
 body {
   margin: 0;
-  overflow-y: auto;
+  overflow: hidden;
   height: auto;
 }
-
+.container{
+  height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 .carousel {
   position: relative;
   width: 100%;
@@ -201,7 +206,7 @@ body {
 @media screen and (min-width: 450px) {
   body {
     margin: 0 auto;
-    width: 390px;
+    width: 450px;
     background-color: gray;
   }
   .endorser-item,
