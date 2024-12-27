@@ -7,13 +7,12 @@ body {
   align-items: center;
   overflow: hidden;
 }
-.container-daily{
-width: 450px;
-}
 .container {
   padding: 16px;
   background-color: #ffffff;
   height: 100vh;
+  overflow: auto;
+
 }
 
 /* Header */
@@ -93,6 +92,7 @@ width: 450px;
 .link-section h4{
   color: #7189ac;
   text-align: center;
+  margin: 0;
 }
 .link-box {
   display: flex;
