@@ -3,26 +3,32 @@ body {
   font-family: Arial, sans-serif;
   background-color: gray;
   color: #ffffff;
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-
-.container {
+.container-daily{
 width: 450px;
+}
+.container {
   padding: 16px;
-  background-color: #1c1c3b;
+  background-color: #ffffff;
   height: 100vh;
 }
 
 /* Header */
-.header {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 16px;
+.header-daily {
+  display: flex;
+  background-color: #00759c;
+  width: 100%;
+  height: 50px;
+  color: #ffffff; 
+  align-items: center;
+  justify-content: center;
 }
-
+.name-daily{
+  font-size: 20px;
+}
 /* Profile section */
 .profile {
   display: flex;
@@ -36,37 +42,70 @@ width: 450px;
   height: 50px;
   border-radius: 50%;
 }
-
-.info .username {
-  color: #ff3b3b;
-  font-weight: bold;
+.info {
+  display: flex;
+  height: 30px;
+}
+.container-name {
+  position: relative; 
+  display: inline-block; 
+  height: 30px;
+  overflow: hidden;
 }
 
-.info .role {
-  background: #3b82f6;
+.gift {
+  display: block; 
+  width: 100%; 
+
+
+}
+
+.username {
+  position: absolute;
+  color: red;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-weight: bold; 
+  pointer-events: none;
+}
+
+.role {
+  background: #054add;
+  padding: 0px 10px;
   border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 12px;
-  margin-top: 4px;
-  display: inline-block;
+  font-size: 14px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 2px; 
+  color: white;
 }
 
-/* Link section */
+.kimcuong {
+  height: 25px;
+  width: 25px;
+}
+
 .link-section {
   margin-bottom: 16px;
 }
-
+.link-section h4{
+  color: #7189ac;
+  text-align: center;
+}
 .link-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #1f1f45;
-  padding: 8px 12px;
+  justify-content: center;
+  background-color: #ececec;
+  padding: 20px 12px;
   border-radius: 8px;
   margin-bottom: 8px;
 }
 
 .link-box span {
+  color: #777272;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -81,11 +120,18 @@ width: 450px;
 }
 
 .qr-section {
+  background-color: #ececec;
   display: flex;
-  gap: 12px;
+  gap: 50px;
   align-items: center;
+  border-radius: 8px;
+  padding: 15px;
 }
-
+.qr-text-copy{
+  color: #777272;
+  display: flex;
+  font-size: 14px;
+}
 .qr-code {
   width: 100px;
   height: 100px;
@@ -98,52 +144,80 @@ width: 450px;
 
 .save-qr {
   margin-top: 8px;
-  background-color: #3b82f6;
+  background: linear-gradient(45deg, #0077ffc9, #6395ff);
   border: none;
   color: #ffffff;
-  border-radius: 4px;
-  padding: 4px 8px;
+  border-radius: 15px;
+  padding: 4px 28px;
   cursor: pointer;
 }
 
-/* Statistics cards */
 .stats {
-  display: flex;
   gap: 12px;
   margin-bottom: 16px;
 }
 
 .card {
-  flex: 1;
-  background: linear-gradient(45deg, #6a5af9, #956af8);
-  padding: 12px;
-  border-radius: 8px;
+  background: linear-gradient(180deg, #0077ffc9, #6395ff);
+  border-radius: 10px;
+  padding: 16px 24px;
+  max-width: 400px;
+  margin: 10px auto;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.card h3 {
-  margin: 0 0 8px 0;
-  font-size: 16px;
+.card h4 {
+  font-size: 17px;
 }
 
-.card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.table-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.card ul li {
-  font-size: 14px;
-}
-
-/* Menu buttons */
-.menu {
+.row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+
 }
 
+.row span {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+}
+
+.row span:first-child {
+  text-align: left;
+}
+
+.menu {
+  display: flex;
+  color: #97a7fc;
+  text-align: center;
+  font-size: .75rem;
+}
+.nhom{
+  display: grid;
+  padding-right: 15px;
+}
+.icon-copy{
+  height: 15px;
+  width: 20px;
+}
+.icon-gr{
+  background-color: #ececec;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 5px;
+  height: 2.1875rem;
+  width: 2.34375rem;
+}
 .menu button {
   flex: 1;
-  background: #1f1f45;
+  background: #ececec;
   color: #ffffff;
   border: none;
   padding: 8px;
@@ -154,6 +228,37 @@ width: 450px;
 
 .menu button:hover {
   background: #3b82f6;
+}
+/* CSS */
+.notification-container{
+  display: flex;
+  justify-content: center;
+}
+.notification {
+  position: fixed;
+  top: 10px;
+  background-color: #e6f7ff;
+  color: #1890ff;
+  padding: 10px 20px;
+  border: 1px solid #91d5ff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notification.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 450px) {
