@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .register-container {
@@ -11,6 +12,9 @@ body {
   align-items: center;
   padding: 20px;
   min-height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .register-header {
