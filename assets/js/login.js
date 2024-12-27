@@ -1,5 +1,5 @@
 function login () {
-  localStorage.setItem('dangnhap', true)
+  sessionStorage.setItem('dangnhap', true)
   window.location.href = '../../trangchu/trangchu.html'
 }
 

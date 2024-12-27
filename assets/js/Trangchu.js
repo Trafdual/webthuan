@@ -124,14 +124,15 @@ function toggleSidebar () {
 }
 
 function updateProgress () {
-  const percentage = 60
+  document.querySelectorAll('.thanh').forEach(thanh => {
+    const percentageElem = thanh.querySelector('.percentage')
+    const progressElem = thanh.querySelector('.progress')
 
-  document.querySelectorAll('.progress').forEach(progress => {
-    progress.style.width = `${percentage}%`
-  })
+    if (percentageElem && progressElem) {
+      const percentage = percentageElem.textContent
 
-  document.querySelectorAll('.percentage').forEach(percentageElem => {
-    percentageElem.textContent = `${percentage}%`
+      progressElem.style.width = `${percentage}`
+    }
   })
 }
 
