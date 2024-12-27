@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
 }
 .account-container {
   overflow: hidden;
@@ -7,6 +8,8 @@ body {
   height: 80%;
   margin-bottom: 60px;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .account-header {
@@ -149,9 +152,11 @@ body {
     margin: 0 auto;
     width: 450px;
     background-color: gray;
+    
   }
   .account-container {
     height: 870px;
+    
   }
   .menu-block-item {
     font-size: 20px;
