@@ -101,7 +101,6 @@ function toggleSidebar () {
   var sidebar = document.getElementById('sidebar')
   var overlay = document.getElementById('overlay')
 
-  // Kiểm tra kích thước màn hình
   var isLargeScreen = window.matchMedia('(min-width: 450px)').matches
 
   if (sidebar.classList.contains('show')) {
@@ -110,7 +109,7 @@ function toggleSidebar () {
 
     if (isLargeScreen) {
       sidebar.style.opacity = 0
-      sidebar.style.transform = 'translateX(-20px)'
+      sidebar.style.transform = 'translateX(150px)'
     }
   } else {
     sidebar.classList.add('show')
@@ -118,7 +117,7 @@ function toggleSidebar () {
 
     if (isLargeScreen) {
       sidebar.style.opacity = 1
-      sidebar.style.transform = 'translateX(240px)'
+      sidebar.style.transform = 'translateX(450px)'
     }
   }
 }

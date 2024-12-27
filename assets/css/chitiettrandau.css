@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: white;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  position: relative;
+  padding: 0 0.9375rem;
+  background: white;
+  color: #00abe5;
+}
+
+.divimgback {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divimgback img {
+  height: 2rem;
+  width: 2rem;
+}
+.divtttd {
+  position: absolute;
+  text-align: center;
+  left: 1.9375rem;
+  right: 1.9375rem;
+  font-size: 1.125rem;
+}
+.game-info {
+  background: linear-gradient(90deg, #5da6fa, #00abe5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  color: white;
+}
+.league-name {
+  width: 100%;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.team-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+  justify-content: center;
+}
+.team-item {
+  flex: 1;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+.team-name {
+  line-height: 0.9375rem;
+  height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.game-date {
+  text-align: center;
+}
+.odds-wrap {
+  padding: 5px;
+}
+.m-tab {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.m-tab::-webkit-scrollbar {
+  height: 5px; /* Chiều cao của thanh cuộn ngang */
+}
+.m-tab::-webkit-scrollbar-track {
+  border-radius: 10px; /* Bo góc */
+  background: transparent;
+}
+
+.m-tab::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Bo góc */
+}
+
+.m-tab::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
+}
+
+.m-tab button {
+  background: linear-gradient(50deg, #3c97ff, #00abe5);
+  color: white;
+  border: none;
+  padding: 0 0.625rem;
+  line-height: 1.6875rem;
+  border-radius: 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.m-table {
+  margin-top: 0.75rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+.m-tr {
+  display: table-row;
+  box-sizing: border-box;
+  height: 2.375rem;
+}
+.m-th,
+.m-td {
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.m-th {
+  font-weight: bold;
+  background-color: #00abe5;
+  color: white;
+}
+
+.cell-0,
+.cell-1 {
+  padding: 12px;
+  white-space: nowrap;
+}
+
+.m-btn {
+  background: linear-gradient(50deg, #3c97ff, #00abe5);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+}
+.thanh {
+  width: 100%;
+  background-color: rgb(201, 200, 200);
+  border-radius: 20px;
+  height: 0.5rem;
+}
+.phantram {
+  height: 100%;
+  width: 60%;
+  background: linear-gradient(50deg, #3c97ff, #00abe5);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    width: 450px;
+    margin: 0 auto;
+    background-color: gray;
+  }
+  .cell-0,
+  .cell-1 {
+    padding: 14.5px;
+  }
+}
