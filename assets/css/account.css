@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
 }
 .account-container {
@@ -142,4 +142,25 @@ body{
 }
 .balance img {
   height: 32px;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+  }
+  .account-container {
+    height: 870px;
+  }
+  .menu-block-item {
+    font-size: 20px;
+  }
+  .menu-item-icon {
+    width: 40px;
+  }
+  .icon-function img {
+    width: 40px;
+    height: 40px;
+  }
 }

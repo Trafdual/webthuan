@@ -201,7 +201,7 @@ body {
 @media screen and (min-width: 450px) {
   body {
     margin: 0 auto;
-    width: 390px;
+    width: 450px;
     background-color: gray;
   }
   .endorser-item,
