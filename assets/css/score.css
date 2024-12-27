@@ -143,6 +143,24 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
+
+}
+
+.lichtyso::-webkit-scrollbar {
+  height: 5px; /* Chiều cao của thanh cuộn ngang */
+}
+.lichtyso::-webkit-scrollbar-track {
+  border-radius: 10px; /* Bo góc */
+   background: transparent;
+}
+
+.lichtyso::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Bo góc */
+}
+
+.lichtyso::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
 }
 
 .item-lich {
@@ -151,8 +169,7 @@
   font-size: 15px;
   background: linear-gradient(30deg, #00abe5, rgb(243, 243, 243));
   flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .item-lich p {
