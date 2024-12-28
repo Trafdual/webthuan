@@ -21,24 +21,27 @@
                     <img src="/assets/images/top-img.png" alt>
                 </div>
             </div>
-
-            <div class="login-input">
-                <div class="login-input-field">
-                    <img src="/assets/images/account.png" alt>
-                    <input type="text" placeholder="Vui lòng nhập tài khoản">
+            <form action="" onsubmit="return login(event)">
+                <div class="login-input">
+                    <div class="login-input-field">
+                        <img src="/assets/images/account.png" alt>
+                        <input type="text"
+                            placeholder="Vui lòng nhập tài khoản" required>
+                    </div>
+                    <div class="login-input-field">
+                        <img src="/assets/images/password.png" alt>
+                        <input type="password"
+                            placeholder="Vui lòng nhập mật mã" required>
+                        <img src="/assets/images/hidepass.png" alt
+                            style="width: 30px; max-width: 100%; height: auto; margin: 0;">
+                    </div>
                 </div>
-                <div class="login-input-field">
-                    <img src="/assets/images/password.png" alt>
-                    <input type="password" placeholder="Vui lòng nhập mật mã">
-                    <img src="/assets/images/hidepass.png" alt
-                        style="width: 30px; max-width: 100%; height: auto; margin: 0;">
+                <div class="login-warning">
+                    <img src="/assets/images/warning-login-register.png" alt>
                 </div>
-            </div>
-            <div class="login-warning">
-                <img src="/assets/images/warning-login-register.png" alt>
-            </div>
-            <button class="login-btn" onclick="login()">Đăng nhập phiên bản
-                1</button>
+                <button type="submit" class="login-btn" onclick="login()">Đăng nhập phiên bản
+                    1</button>
+            </form>
             <div class="donthaveacc">
                 <p>Bạn chưa có tài khoản? <a
                         href="../register/register.html">Đăng ký ngay</a></p>

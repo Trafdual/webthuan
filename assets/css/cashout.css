@@ -4,8 +4,7 @@ body {
 }
 
 .cashout-container {
-    width: 450px;
-    height: 100vh;
+    
     background-color: #fff;
     margin: 0 auto;
     overflow: auto;

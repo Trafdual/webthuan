@@ -19,6 +19,7 @@
           <img src="/assets/images/top-img.png" alt />
         </div>
       </div>
+      <form action="">
       <div class="register-form">
         <div class="register-input-field">
           <label for="username">
@@ -29,6 +30,7 @@
             type="text"
             id="username"
             placeholder=""
+            required
           />
           <small>Vui lòng nhập Id người chơi đăng ký</small>
         </div>
@@ -36,7 +38,7 @@
           <label for="password">
             <img src="/assets/images/register-pass.png" alt />
             Mật khẩu</label>
-          <input type="password" id="password" placeholder />
+          <input type="password" id="password" placeholder required/>
           <img
             src="/assets/images/hidepass.png"
             alt="Show/Hide"
@@ -65,7 +67,7 @@
           <label for="email">
             <img src="/assets/images/register-email.png" alt />
             Địa chỉ Email</label>
-          <input type="email" id="email" placeholder />
+          <input type="email" id="email" placeholder required/>
           <small>Điền chính xác email để lấy mật khẩu khi bạn quên.</small>
         </div>
         <div class="register-input-field">
@@ -77,7 +79,7 @@
               <option value="+84">+84</option>
               
             </select>
-            <input type="tel" id="phone" placeholder />
+            <input type="tel" id="phone" placeholder required/>
           </div>
           <small>Số điện thoại không được bắt đầu bằng số 0, bạn cần điền chính
             xác
@@ -85,7 +87,7 @@
         </div>
 
         <div class="register-term">
-          <input type="checkbox" id="agreement" class="custom-checkbox" />
+          <input type="checkbox" id="agreement" class="custom-checkbox" required/>
           <label for="agreement">
             <span class="checkbox-icon"></span>
             Tôi đã đủ tuổi và đồng ý <a href="#">Chính sách thành viên</a>
@@ -94,6 +96,7 @@
 
         <button type="submit" class="register-btn">Đăng ký phiên bản 1</button>
       </div>
+      </form>
     </div>
   </body>
 </html>
