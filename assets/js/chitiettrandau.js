@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal')
+  const closeModalButton = document.querySelector('.close-modal')
+  const itemNghichElements = document.querySelectorAll('.item-nghich')
+  itemNghichElements.forEach(item => {
+    item.addEventListener('click', () => {
+      modal.classList.remove('hidden')
+    })
+  })
+  closeModalButton.addEventListener('click', () => {
+    modal.classList.add('hidden')
+  })
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.classList.add('hidden')
+    }
+  })
+})
+
+
 function dinhDangThoiGian (giay) {
   const gio = Math.floor(giay / 3600)
   const phut = Math.floor((giay % 3600) / 60)
