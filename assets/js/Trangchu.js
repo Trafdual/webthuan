@@ -91,7 +91,9 @@ document.getElementById('xocdia').addEventListener('click', function () {
 document.getElementById('xoso').addEventListener('click', function () {
   loadContent('xoso', '../../trangchu/xoso/xoso.html')
 })
-
+document.getElementById('thethao').addEventListener('click', function () {
+  loadContent('thethao', '../../trangchu/thethao/thethao.html')
+})
 document.addEventListener('DOMContentLoaded', function () {
   const tysoCategory = document.getElementById('tyso')
   tysoCategory.classList.add('active')
