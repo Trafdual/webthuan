@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    max-width: 450px;
+  height: 100vh;
+    background-color: #ffffff;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.header div {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #919191;
+    position: relative;
+}
+
+.header div.active {
+    color: #000000;
+}
+
+.header div.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #4caf50;
+}
+
+.datepicker {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.content {
+    padding: 10px 20px;
+}
+
+.bet-item {
+    background-color: #6b7b3f;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.bet-item div {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.bet-item div span {
+    flex: 1;
+}
+
+.bet-item .status {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    color: #d6e75a;
+}
+@media screen and (min-width: 450px) {
+    body {
+      margin: 0 auto;
+      width: 450px;
+      background-color: gray;
+    }
+  }
