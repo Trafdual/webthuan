@@ -145,7 +145,7 @@ function lichthidau () {
 function ketqua () {
   const ketqua = document.getElementById('ketqua')
   const lichthidau = document.getElementById('lichthidau')
-  ketqua.style.display = 'block'
+  ketqua.style.display = 'flex'
   lichthidau.style.display = 'none'
 }
 

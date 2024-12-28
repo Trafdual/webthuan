@@ -1,5 +1,5 @@
 function handleLoginStatus () {
-  const isLoggedIn = localStorage.getItem('dangnhap')
+  const isLoggedIn = sessionStorage.getItem('dangnhap')
   const accountinfoDiv = document.getElementById('account-info')
   const accountdkdnDiv = document.getElementById('account-dkdn')
   if (accountinfoDiv && accountdkdnDiv) {
@@ -18,7 +18,7 @@ function handleLoginStatus () {
 }
 
 function dangxuat(){
-  localStorage.removeItem('dangnhap')
+  sessionStorage.removeItem('dangnhap')
   window.location.href = '../../trangchu/trangchu.html'
 }
 
