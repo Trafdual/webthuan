@@ -12,6 +12,7 @@
   top: 0;
   background-color: white;
   width: 100%;
+  z-index: 10000;
 }
 
 .tabscore button {
@@ -87,7 +88,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
+  align-items: start;
 }
 .doibong {
   display: flex;
@@ -134,7 +135,7 @@
 .lichtyso {
   width: 100%;
   position: sticky;
-  top: 40px;
+  top: 34px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: white;
@@ -143,7 +144,7 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
-
+  z-index: 10000;
 }
 
 .lichtyso::-webkit-scrollbar {
@@ -151,16 +152,16 @@
 }
 .lichtyso::-webkit-scrollbar-track {
   border-radius: 10px; /* Bo góc */
-   background: transparent;
+  background: transparent;
 }
 
 .lichtyso::-webkit-scrollbar-thumb {
-   background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 10px; /* Bo góc */
 }
 
 .lichtyso::-webkit-scrollbar-thumb:hover {
-   background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
+  background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
 }
 
 .item-lich {
@@ -175,3 +176,63 @@
 .item-lich p {
   margin: 0;
 }
+.ketqua{
+  display: none;
+}
+
+.divitemketqua {
+  border-radius: 10px;
+  height: auto;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(30deg, #00abe5, rgb(238, 238, 238));
+  width: 100%;
+  font-size: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tieudeketqua{
+  border-bottom: 1px solid #00abe5;
+}
+.doibongketqua{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+.ketquatyso{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.divht{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.datedoibong{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.divht p{
+  margin: 3px;
+}
+
+.datedoibong p{
+  margin: 5px;
+}
+.ketquatyso h4{
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media  screen and (min-width: 450px) {
+  .doibongketqua{
+    gap: 150px;
+  }
+}
+
+

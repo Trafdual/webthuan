@@ -82,9 +82,42 @@ body {
 .game-date {
   text-align: center;
 }
-.odds-wrap {
+.divnghichtyso{
+  margin-top: 10px;
+}
+
+.tieudenghich {
+  text-align: center;
+  color: #00abe5;
+  font-size: 1.125rem;
+}
+.tieudenghich h4{
+  margin-top: 5px;
+}
+.bodynghich {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 5px;
 }
+.item-nghich {
+  flex: 0 1 calc(33.33% - 30px);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(50deg, #3c97ff, #00abe5);
+}
+.item-nghich p {
+  margin: 0;
+  color: white;
+}
+.item-nghich img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .m-tab {
   overflow-x: auto;
   white-space: nowrap;
@@ -120,64 +153,11 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
-.m-table {
-  margin-top: 0.75rem;
-  text-align: center;
-  border-collapse: collapse;
-}
-.m-tr {
-  display: table-row;
-  box-sizing: border-box;
-  height: 2.375rem;
-}
-.m-th,
-.m-td {
-  display: table-cell;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-.m-th {
-  font-weight: bold;
-  background-color: #00abe5;
-  color: white;
-}
-
-.cell-0,
-.cell-1 {
-  padding: 12px;
-  white-space: nowrap;
-}
-
-.m-btn {
-  background: linear-gradient(50deg, #3c97ff, #00abe5);
-  color: white;
-  border: none;
-  padding: 5px;
-  border-radius: 20px;
-}
-.thanh {
-  width: 100%;
-  background-color: rgb(201, 200, 200);
-  border-radius: 20px;
-  height: 0.5rem;
-}
-.phantram {
-  height: 100%;
-  width: 60%;
-  background: linear-gradient(50deg, #3c97ff, #00abe5);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-
-}
 
 @media screen and (min-width: 450px) {
   body {
     width: 450px;
     margin: 0 auto;
     background-color: gray;
-  }
-  .cell-0,
-  .cell-1 {
-    padding: 14.5px;
   }
 }
