@@ -12,7 +12,6 @@ body {
   height: 100vh;
   background-color: #fff;
   margin: 0 auto;
-  overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

@@ -82,7 +82,7 @@ body {
 .game-date {
   text-align: center;
 }
-.divnghichtyso{
+.divnghichtyso {
   margin-top: 10px;
 }
 
@@ -91,7 +91,7 @@ body {
   color: #00abe5;
   font-size: 1.125rem;
 }
-.tieudenghich h4{
+.tieudenghich h4 {
   margin-top: 5px;
 }
 .bodynghich {
@@ -107,11 +107,13 @@ body {
   justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
-  background: linear-gradient(50deg, #3c97ff, #00abe5);
+  border: 1px solid #00abe5;
+  background-color: rgb(238, 237, 237);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .item-nghich p {
   margin: 0;
-  color: white;
 }
 .item-nghich img {
   width: 1.25rem;
