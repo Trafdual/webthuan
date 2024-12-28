@@ -129,20 +129,20 @@ body {
 }
 
 .m-tab::-webkit-scrollbar {
-  height: 5px; /* Chiều cao của thanh cuộn ngang */
+  height: 5px;
 }
 .m-tab::-webkit-scrollbar-track {
-  border-radius: 10px; /* Bo góc */
+  border-radius: 10px;
   background: transparent;
 }
 
 .m-tab::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px; /* Bo góc */
+  border-radius: 10px; 
 }
 
 .m-tab::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .m-tab button {

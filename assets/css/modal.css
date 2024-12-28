@@ -26,22 +26,22 @@
 
 .tieudemodal {
   display: flex;
-  align-items: center; /* Căn giữa theo chiều dọc */
-  justify-content: center; /* Đưa tiêu đề ra giữa */
-  position: relative; /* Để định vị chính xác nút đóng modal */
+  align-items: center;
+  justify-content: center;
+  position: relative; 
 }
 
 .close-modal {
-  position: absolute; /* Đặt nút vào vị trí cụ thể */
+  position: absolute;
   left: 10px;
-  top: 50%; /* Căn chỉnh theo chiều dọc */
-  transform: translateY(-50%); /* Đưa nút về đúng giữa chiều dọc */
+  top: 50%;
+  transform: translateY(-50%);
   background: #00abe5;
   border: none;
   cursor: pointer;
   color: white;
   border-radius: 50%;
-  width: 24px; /* Kích thước nút */
+  width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -49,9 +49,9 @@
 }
 
 .tieudemodal h4 {
-  margin: 0; /* Loại bỏ khoảng cách mặc định */
-  font-size: 18px; /* Tùy chỉnh kích thước */
-  color: black; /* Màu tiêu đề (có thể tùy chỉnh theo ý muốn) */
+  margin: 0;
+  font-size: 18px; 
+  color: black;
 }
 
 .divtysomodal {

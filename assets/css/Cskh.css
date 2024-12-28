@@ -50,7 +50,7 @@ body {
 }
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 0px 25px;
 }

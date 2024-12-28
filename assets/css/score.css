@@ -25,7 +25,7 @@
   font-weight: 700;
   font-size: 13px;
   color: #333;
-  transition: color 0.3s ease; /* Đổi màu chữ mượt */
+  transition: color 0.3s ease; 
 }
 
 .tabscore button.active-tab::after {
@@ -122,7 +122,7 @@
 
 .percentage {
   position: absolute;
-  right: 20px; /* Hoặc 'left: 50%' nếu muốn đặt ở giữa */
+  right: 20px; 
   color: black;
   font-size: 10px;
   font-weight: bold;
@@ -149,20 +149,20 @@
 }
 
 .lichtyso::-webkit-scrollbar {
-  height: 5px; /* Chiều cao của thanh cuộn ngang */
+  height: 5px;
 }
 .lichtyso::-webkit-scrollbar-track {
-  border-radius: 10px; /* Bo góc */
+  border-radius: 10px; 
   background: transparent;
 }
 
 .lichtyso::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px; /* Bo góc */
+  border-radius: 10px; 
 }
 
 .lichtyso::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4); /* Màu khi hover */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .item-lich {

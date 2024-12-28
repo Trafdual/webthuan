@@ -1,9 +1,9 @@
 .marquee-container {
-  width: 100%; /* Chiều rộng của container */
-  display: flex; /* Sử dụng Flexbox */
-  align-items: center; /* Căn giữa nội dung theo chiều dọc */
-  background: #f9f9f9; /* Màu nền */
-  border: 1px solid #ddd; /* Viền (tuỳ chọn) */
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  background: #f9f9f9; 
+  border: 1px solid #ddd; 
   overflow: hidden;
   height: 30px;
 }
@@ -21,14 +21,14 @@
   display: inline-block;
   font-size: 14px;
   white-space: nowrap;
-  color: #007aff; /* Màu chữ */
+  color: #007aff; 
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(20%); /* Chữ bắt đầu từ ngoài vùng marquee */
+    transform: translateX(20%);
   }
   100% {
-    transform: translateX(-100%); /* Chữ chạy hết sang bên trái của marquee */
+    transform: translateX(-100%); 
   }
 }
