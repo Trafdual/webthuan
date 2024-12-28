@@ -27,7 +27,7 @@ async function loadNavbar () {
   }
 }
 function handleLoginStatus () {
-  const isLoggedIn = sessionStorage.getItem('danqlthenganhanggnhap')
+  const isLoggedIn = sessionStorage.getItem('dangnhap')
   const btndkdnDiv = document.getElementById('btndkdn')
   const headerDnDiv = document.getElementById('headerdn')
   console.log(btndkdnDiv)
