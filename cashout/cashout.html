@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/cashout.css">
+    <title>Cash Out</title>
+</head>
+
+<body>
+    <div class="cashout-container">
+        <div class="cashout-header">
+            <div class="cashout-ic-back">
+                <img src="/assets/images/ic_back_white.png" alt="Quay lại" />
+            </div>
+            <div class="cashout-title">Rút tiền</div>
+        </div>
+
+        <div class="cashout-input">
+            <div class="form-group">
+                <label for="bank-select">
+                    Chọn ngân hàng (<span>*</span>)
+                </label>
+                <select id="bank-select">
+                    <option value="nhnn">Ngân hàng nhà nước (NHNN)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="account-number">
+                    Số tài khoản (<span>*</span>)
+                </label>
+                <input type="text" id="account-number" placeholder="Số tài khoản nhận tiền" />
+            </div>
+
+            <div class="form-group">
+                <label for="account-owner">
+                    Chủ tài khoản (<span>*</span>)
+                </label>
+                <input type="text" id="account-owner" placeholder="Tên trên tài khoản ngân hàng" />
+                <small>
+                    Bạn không thể chỉnh sửa được thông tin chủ tài khoản, vui lòng liên hệ quản trị viên nếu muốn thay
+                    đổi
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="captcha-input">Vui lòng nhập mã xác nhận</label>
+                <div class="captcha-container">
+                    <input type="text" id="captcha-input" placeholder="Vui lòng nhập mã xác nhận">
+                    <div class="captcha-image">
+                        <span>8u895</span>
+                        <button class="refresh-button">&#x21bb;</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <button type="submit" class="update-button">Cập nhật</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

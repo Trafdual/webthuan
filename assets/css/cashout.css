@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.cashout-container {
+    width: 450px;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cashout-header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(180deg, #00aae6, #0084e6);
+}
+
+.cashout-ic-back img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cashout-header .cashout-title {
+    flex-grow: 1;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cashout-input {
+    width: 85%;
+    margin: 16px auto 0 auto;
+}
+
+.cashout-input .form-group {
+    margin-bottom: 20px;
+}
+
+.cashout-input  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.cashout-input input,
+.cashout-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color:transparent;
+    color: #000;
+    box-sizing: border-box;
+}
+
+
+.cashout-input small {
+    color: #e94951;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.cashout-input .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  
+  .cashout-input .form-group .captcha-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3px;
+  }
+  
+  #captcha-input {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+    flex: 1;
+  }
+  
+  .captcha-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7ff;
+    font-weight: bold;
+    padding: 4px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .captcha-image span {
+    margin: 0 2px;
+    font-size: 20px;
+    transform: rotate(-10deg);
+  }
+  
+  .refresh-button {
+    background-color: transparent;
+    border: none;
+    color: #67e3f9;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  
+  
+.update-button {
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #00aae6, #0084e6);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.update-button:hover {
+    opacity: 0.9;
+}
+
+
+@media screen and (min-width: 450px) {
+    body {
+        margin: 0 auto;
+        width: 450px;
+        background-color: gray;
+    }
+}
