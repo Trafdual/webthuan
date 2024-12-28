@@ -181,6 +181,8 @@ body {
 }
 .icon-container {
   padding: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: unset;
   border: none;
   background-image: url("/assets/images/cskh/khung.png") !important;
@@ -193,7 +195,7 @@ body {
 .product-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .danhsachcskh {
   display: flex;
@@ -242,6 +244,8 @@ body {
   }
   .icon-container {
     padding: 40px;
+    padding-left: 5px;
+  padding-right: 5px;
   }
   .danhsachcskh {
     gap: 7px;
@@ -251,7 +255,7 @@ body {
     font-size: 10px;
     padding: 3px;
   }
-  .service-trong{
+  .service-trong {
     padding: 10%;
   }
 }
