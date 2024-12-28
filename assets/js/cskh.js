@@ -1,6 +1,6 @@
 const leftArrow = document.getElementById('left-arrow');
         const rightArrow = document.getElementById('right-arrow');
-        const icons = document.querySelectorAll('.icon');
+        const icons = document.querySelectorAll('.icon-cskh');
 
         let currentStartIndex = 0;
 

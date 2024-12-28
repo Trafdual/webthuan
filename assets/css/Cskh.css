@@ -1,220 +1,261 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container {
-    background: linear-gradient(to bottom, #d1f7ff, #c9dee6);
-    height: 100vh;
-    max-width: 100%;
-    margin: 0 auto;
-
+  background: linear-gradient(to bottom, #d1f7ff, #c9dee6);
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .header {
-    background: radial-gradient(153.87% 153.87% at 50% -53.87%, rgba(185, 235, 255, 0.88) 8.33%, rgba(211, 243, 255, 0.61) 68.14%, #8bdeff 100%);
-    padding: 10px 10px;
-    color: #fff;
-    height: 65px;
-    display: flex;
-    justify-content: center;
+  background: radial-gradient(
+    153.87% 153.87% at 50% -53.87%,
+    rgba(185, 235, 255, 0.88) 8.33%,
+    rgba(211, 243, 255, 0.61) 68.14%,
+    #8bdeff 100%
+  );
+  padding: 10px 10px;
+  color: #fff;
+  height: 65px;
+  display: flex;
+  justify-content: center;
 }
 
 .header .logo {
-    height: 80px;
+  height: 80px;
 }
 
 .header .slogan {
-    font-size: 14px;
-    margin-top: 5px;
+  font-size: 14px;
+  margin-top: 5px;
 }
-.customer-service img, .high-speed-links img{
-    width: 85%;
-    margin: 20px auto 10px;
-    display: flex;
-    justify-content: center;
+.customer-service img,
+.high-speed-links img {
+  width: 85%;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: center;
 }
-.customer-service p{
-    text-align: center;
-    font-size: 14px;
-    color: #08497B;
-
+.customer-service p {
+  text-align: center;
+  font-size: 14px;
+  color: #08497b;
 }
 .services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột */
-    gap:10px;
-    padding: 0px 25px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 10px;
+  padding: 0px 25px;
 }
 
 .service {
-    background: #00a1e4;
-    border: 2px solid #00a1e4;
-    border-radius: 25px;
-    text-align: center;
-    padding: 2px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+  background: #00a1e4;
+  border: 2px solid #00a1e4;
+  border-radius: 25px;
+  text-align: center;
+  padding: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .service:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
-.service-trong{
-    background: #00a1e4;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    text-align: center;
-    padding: 10px;
+.service-trong {
+  background: #00a1e4;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5%;
 }
 .service-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #00a1e4;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00a1e4;
 }
 
 .service-icon img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .service p {
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
 
-    margin: 0;
-}
-.container-hotro {
-    position: relative; /* Đặt container làm tham chiếu */
-    text-align: center; /* Căn giữa nội dung (tuỳ chọn) */
-  }
-  .khung {
-    width: 430px; /* Kích thước ảnh (tuỳ chỉnh nếu cần) */
-    height: auto; /* Duy trì tỉ lệ ảnh */
-    display: block; /* Đảm bảo ảnh là khối để không chồng chéo */
-  }
-.container-hotro h4 {
-    position: absolute;
-    top: -10px;
-    left: 33%;
-    color: #ffffff;
-    padding: 10px;
-    background-color: #0071bf;
-    border-radius: 15px;
-    font-size: 14px;
-    width: 30%;
-}
-.icon-container {
-    position: absolute; /* Đặt icon-container đè lên ảnh */
-    top: 40%; 
-    display: flex; /* Sử dụng flexbox để sắp xếp các item */
-    align-items: center;
-    gap: 60px;
-    
-  }
-.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #0077b6;
-    transition: transform 0.3s;
-}
-.hotro{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.icon:hover {
-    transform: scale(1.1);
+  margin: 0;
 }
 
-.icon img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-.icon span {
-    padding: 5px 0px;
-    color: #fff;
-    border-radius: 15px;
-    background-color: #0077b6;
-    width: 80px;
-    font-size: 12px;
-}
-.arrow {
-    font-size: 24px;
-    color: #0077b6;
-    cursor: pointer;
-    user-select: none;
-}
-
-.arrow.disabled {
-    color: #b3d7ee;
-    cursor: not-allowed;
-}
 .support-platform {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .platform-button {
-    background-color: #0071bf;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
+  background-color: #0071bf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .platform-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .platform-icons img {
-    width: 50px;
+  width: 50px;
 }
 
 .high-speed-links h2 {
-    color: #0071bf;
-    font-size: 16px;
-    margin: 20px 0 10px;
+  color: #0071bf;
+  font-size: 16px;
+  margin: 20px 0 10px;
 }
 
 .links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột */
-    gap:10px;
-    padding: 0px 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 10px;
+  padding: 0px 25px;
 }
 
 .links button {
-    background-color: #00a1e4;
-    color: #fff;
-    border: 2px solid #ffffff;
+  background-color: #00a1e4;
+  color: #fff;
+  border: 2px solid #ffffff;
 
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
 }
+.hotro {
+  margin-top: 10px;
+}
+
+.btn-right-sp.btn-label {
+  width: 35%;
+  margin: auto;
+  margin-bottom: -30px;
+  padding: 8px;
+  border: none;
+}
+
+.btn-right-sp {
+  padding: 4px;
+  border-radius: 7.779px;
+  border: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: #26a8dfc9;
+  background: linear-gradient(0deg, #26a8df 0.54%, #00b5ff 77.85%);
+}
+
+.text-sp {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 3.786px 3.786px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.icon-container {
+  padding: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: unset;
+  border: none;
+  background-image: url("/assets/images/cskh/khung.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 2%;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.danhsachcskh {
+  display: flex;
+  overflow: hidden;
+}
+.icon-cskh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.icon-cskh img {
+  width: 17vw;
+  height: 17vw;
+}
+.icon-cskh span {
+  font-size: 8px;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #00a1e4;
+  width: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 3.786px 3.786px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.arrow {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 450px) {
-    body {
-      margin: 0 auto;
-      width: 450px;
-      background-color: gray;
-      overflow-x: hidden;
-    }
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+    overflow-x: hidden;
   }
+  .icon-cskh img {
+    width: 70px;
+    height: 70px;
+  }
+  .icon-container {
+    padding: 40px;
+    padding-left: 5px;
+  padding-right: 5px;
+  }
+  .danhsachcskh {
+    gap: 7px;
+  }
+  .icon-cskh span {
+    width: 90%;
+    font-size: 10px;
+    padding: 3px;
+  }
+  .service-trong {
+    padding: 10%;
+  }
+}
