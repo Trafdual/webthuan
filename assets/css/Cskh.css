@@ -209,8 +209,8 @@ body {
   gap: 5px;
 }
 .icon-cskh img {
-  width: 17vw;
-  height: 17vw;
+  width: 20vw;
+  height: 20vw;
 }
 .icon-cskh span {
   font-size: 8px;
@@ -239,8 +239,8 @@ body {
     overflow-x: hidden;
   }
   .icon-cskh img {
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
   }
   .icon-container {
     padding: 40px;
