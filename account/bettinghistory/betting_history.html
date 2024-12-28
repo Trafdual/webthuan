@@ -1,53 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lịch Sử Trò Chơi</title>
-  <link rel="stylesheet" href="../assets/css/navbar.css">
-  <link rel="stylesheet" href="../../assets/css/betting_history.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="../../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../../assets/css/betting_history.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div id="processing-tab" class="active">Đang xử lý</div>
-            <div id="completed-tab">Đã hoàn thành</div>
+      <div class="header-app">
+        <a href="../promotion.html">
+          <img
+            src="../../assets/images/backicon.png"
+            alt="Avatar"
+            class="back-icon"
+          />
+        </a>
+        Lịch Sử Trò Chơi
+      </div>
+      <div class="header">
+        <div id="processing-tab" class="active">Đang xử lý</div>
+        <div id="completed-tab">Đã hoàn thành</div>
+      </div>
+      <!-- <div style="color: black; font-weight: bold;">
+            <input type="date" class="datepicker" placeholder="Chọn ngày">
+            Kiểm tra
+        </div> -->
+      <div class="input-container">
+        <div class="date-input" id="date-input">Chọn ngày</div>
+        <div onclick="" class="check-button">Kiểm tra</div>
+      </div>
+      <div class="calendar-container" id="calendar-container">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <span id="month-year"></span>
+          <button id="next-month">&gt;</button>
         </div>
-        <input type="date" class="datepicker" placeholder="Chọn ngày">
-        <div class="content" id="processing-content">
-            <div class="bet-item">
-                <div><span><b>Mã:</b></span><span>52360B143098</span></div>
-                <div><span></span><span>Al Ittihad Alexandria vs Modern Sport FC</span></div>
-                <div><span>Kèo:</span><span>FT Tỷ số 1:0 <span class="highlight">10.56%</span></span></div>
-                <div><span>Giờ đấu:</span><span>22:00 25/12/2024</span></div>
-                <div><span>Ngày cược:</span><span>2024-12-25 21:39:14</span></div>
-                <div><span>Trạng thái:</span><span class="status">Thắng</span></div>
-              <div>
-                <div><span>Tiền cược:</span><span>200.00</span></div>
-                <div><span>Lợi nhuận:</span><span>21.12</span></div>
-                <div><span>Phí cược:</span><span>1.06</span></div>
-                <div><span>Lợi nhuận ròng:</span><span>20.06</span></div>
+        <div class="calendar-days">
+          <div>Su</div>
+          <div>Mo</div>
+          <div>Tu</div>
+          <div>We</div>
+          <div>Th</div>
+          <div>Fr</div>
+          <div>Sa</div>
+        </div>
+        <div class="calendar-dates" id="calendar-dates"></div>
+      </div>
+      <div class="content" id="processing-content">
+        <div>
+          
+          <div class="bet-item">
+            <div class="copy">
+              <img src="../../assets/images/copy.png" alt />
+              <p>52360B143098</p>
+            </div>
+            <div class="bet-info">
+              <p>Al Ittihad Alexandria vs Modern Sport FC</p>
+            </div>
+            <div class="m-horizontal-swiper">
+              <div class="horizontal-info">
+                <div class="summary-item">
+                  <span>Kèo FT Tỷ số <b>0:0</b> <span>5.76%</span></span>
+                </div>
+                <div class="summary-item">
+                  <span>Giờ đấu <b>18:30 26/12/2024</b></span>
+                </div>
+                <div class="summary-item">
+                  <span>Ngày cược <b>2024-12-26 18:29:28</b></span>
+                </div>
+                <div class="summary-item">
+                  <span>Trạng thái <b>Thắng</b></span>
+                </div>
+              </div>
+              <div class="horizontal-info2">
+                <div class="summary-item">Tiền cược <span>500.00</span></div>
+                <div class="summary-item">Lợi nhuận <span>28.80</span></div>
+                <div class="summary-item">Phí cược <span>1.44</span></div>
+                <div class="summary-item">
+                  Lợi nhuận ròng <span>27.36</span>
+                </div>
               </div>
             </div>
+          </div>
         </div>
-        <div class="content hidden" id="completed-content">
-            <div class="bet-item">
-                <div><span><b>Mã:</b></span><span>A07DEF7BEA4</span></div>
-                <div><span><b>Trận đấu:</b></span><span>Napoli vs Roma</span></div>
-                <div><span><b>Kèo:</b></span><span>Tỷ số 2:1</span></div>
-                <div><span><b>Giờ đấu:</b></span><span>20:00 25/12/2024</span></div>
-                <div><span><b>Ngày cược:</b></span><span>2024-12-25 20:15:00</span></div>
-                <div><span><b>Trạng thái:</b></span><span class="status">Hoàn thành</span></div>
-                <div><span><b>Tiền cược:</b></span><span>300.00</span></div>
-                <div><span><b>Lợi nhuận:</b></span><span>50.00</span></div>
-                <div><span><b>Phí cược:</b></span><span>1.00</span></div>
-                <div><span><b>Lợi nhuận ròng:</b></span><span>49.00</span></div>
+        <div class="bet-container"></div>
+      </div>
+      <div class="content hidden" id="completed-content">
+        <div class="bet-item">
+          <div class="copy">
+            <img src="../../assets/images/copy.png" alt />
+            <p>52360B143098</p>
+          </div>
+          <div class="bet-info"><p>Al I12 vs Modern Sport FC</p></div>
+          <div class="m-horizontal-swiper">
+            <div class="horizontal-info">
+              <div class="summary-item">
+                <span>Kèo FT Tỷ số <b>0:0</b> <span>5.76%</span></span>
+              </div>
+              <div class="summary-item">
+                <span>Giờ đấu <b>18:30 26/12/2024</b></span>
+              </div>
+              <div class="summary-item">
+                <span>Ngày cược <b>2024-12-26 18:29:28</b></span>
+              </div>
+              <div class="summary-item">
+                <span>Trạng thái <b>Thắng</b></span>
+              </div>
             </div>
+            <div class="horizontal-info2">
+              <div class="summary-item">Tiền cược <span>500.00</span></div>
+              <div class="summary-item">Lợi nhuận <span>28.80</span></div>
+              <div class="summary-item">Phí cược <span>1.44</span></div>
+              <div class="summary-item">Lợi nhuận ròng <span>27.36</span></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="../../assets/js/betting_history.js"></script>
     <div class="navbar"></div>
     <script src="../../assets/js/navbar.js"></script>
-</body>
+    <script src="../../assets/js/calendar.js"></script>
+  </body>
 </html>
