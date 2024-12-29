@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: white;
+}
+
+.header-qr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  position: relative;
+  padding: 0 0.9375rem;
+  background: white;
+  color: #00abe5;
+}
+
+.divimgback {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divimgback img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.divtttd {
+  position: absolute;
+  left: 1.9375rem;
+  right: 1.9375rem;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.maqr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.maqr h4 {
+  margin: 2px;
+}
+.maqr img {
+  width: 300px;
+  height: 300px;
+}
+.uniform p img {
+  width: 20px;
+  height: 20px;
+}
+.uniform p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    width: 450px;
+    margin: 0 auto;
+    background-color: gray;
+  }
+}
