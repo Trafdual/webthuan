@@ -12,8 +12,8 @@ function showNotification(message) {
   
   document.querySelectorAll('.icon-copy').forEach(copyButton => {
     copyButton.addEventListener('click', function () {
-      const targetId = copyButton.getAttribute('data-target'); // Lấy giá trị ID từ thuộc tính data-target
-      const linkText = document.getElementById(targetId).textContent; // Truy xuất nội dung cần sao chép
+      const targetId = copyButton.getAttribute('data-target');
+      const linkText = document.getElementById(targetId).textContent;
       navigator.clipboard.writeText(linkText)
         .then(() => {
           showNotification('Đã sao chép dữ liệu vào clipboard!');
