@@ -6,7 +6,7 @@ body {
 
 .container {
   background: linear-gradient(to bottom, #d1f7ff, #c9dee6);
-  height: 100vh;
+  height: 95vh;
   max-width: 100%;
   margin: 0 auto;
   overflow-y: auto;
