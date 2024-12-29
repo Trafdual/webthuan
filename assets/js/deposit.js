@@ -69,10 +69,14 @@ input.addEventListener('input', () => {
 function handleProceed (event) {
   event.preventDefault()
 
-
   const form = document.querySelector('form')
   if (form.reportValidity()) {
     form.submit()
-    window.location.href = '../../qrnaptien/qrnaptien.html'
+    const amountInput = form.querySelector('input[name="amount"]')
+    const amount = amountInput
+      ? parseInt(amountInput.value, 10) * 1000
+      : 0
+
+    window.location.href = `../../qrnaptien/qrnaptien.html?amount=${encodeURIComponent(amount)}`
   }
 }

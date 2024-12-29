@@ -12,6 +12,10 @@ body {
 }
 
 .header-qr {
+  position: fixed;
+  width: 100%;
+}
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,18 +66,31 @@ body {
   width: 20px;
   height: 20px;
 }
+.uniform {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .uniform p {
   display: flex;
   align-items: center;
   gap: 5px;
   overflow: hidden;
-  
+  flex-wrap: wrap;
 }
+.demnguoc {
+  color: black !important;
+}
+  .body-qr{
+    margin-top: 30px;
+  }
 
 @media screen and (min-width: 450px) {
   body {
     width: 450px;
     margin: 0 auto;
     background-color: gray;
+  }
+  .header-qr {
+    width: 450px;
   }
 }

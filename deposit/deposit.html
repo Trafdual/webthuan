@@ -7,124 +7,139 @@
     <title>Deposit</title>
   </head>
   <body>
-    <form action="">
-    <div class="deposit-container">
-      <div class="deposit-header">
-        <a href="/trangchu/trangchu.html">
-          <div class="deposit-left">
-            <img src="/assets/images/back.png" alt />
-          </div>
-        </a>
-
-        <div class="deposit-title">Nạp tiền</div>
-        <div class="deposit-right">
-          <div class="deposit-icon-history">
-            <img src="/assets/images/dvkh.png" alt />
-          </div>
-          <div class="deposit-link-name">Lịch sử</div>
-        </div>
-      </div>
-
-      <div class="deposit-info">
-        <div class="deposit-info-row">
-          <div class="deposit-account">
-            <div class="deposit-account-icon">
-              <img src="/assets/images/deposit-acc.png" alt />
+    <form action>
+      <div class="deposit-container">
+        <div class="deposit-header">
+          <a href="/trangchu/trangchu.html">
+            <div class="deposit-left">
+              <img src="/assets/images/back.png" alt />
             </div>
-            <div class="deposit-account-name">ae123321</div>
-          </div>
-          <div class="deposit-balance-label">
-            <div class="balance-icon">
-              <img src="/assets/images/ic-balance.png" alt />
+          </a>
+
+          <div class="deposit-title">Nạp tiền</div>
+          <div class="deposit-right">
+            <div class="deposit-icon-history">
+              <img src="/assets/images/dvkh.png" alt />
             </div>
-            <div class="deposit-balance-text">Số dư tài khoản</div>
-          </div>
-        </div>
-        <div class="deposit-info-row flex-end">
-          <div class="balance-value">0.00</div>
-        </div>
-      </div>
-
-      <div class="deposit-method">
-        <div class="deposit-method-item">
-          <div class="deposit-method-icon">
-            <img src="/assets/images/congvip.png" alt />
-          </div>
-          <div class="deposit-method-name">CỔNG VIP</div>
-        </div>
-        <div class="deposit-method-item">
-          <div class="deposit-method-icon">
-            <img src="/assets/images/QR.png" alt />
-          </div>
-          <div class="deposit-method-name">QUÉT MÃ QR</div>
-        </div>
-        <div class="deposit-method-item">
-          <div class="deposit-method-icon">
-            <img src="/assets/images/usdt.png" alt />
-          </div>
-          <div class="deposit-method-name">USDT</div>
-        </div>
-      </div>
-
-      <div class="deposit-input">
-        <div class="deposit-info-header">
-          <span>Hạn mức nạp 50 - 300000</span>
-          <span>Không mất phí</span>
-        </div>
-        <div class="deposit-input-box">
-          <input type="number" placeholder="50 - 300000" required id="deposit-amount"/>
-          <span class="currency-label">VND(k)</span>
-        </div>
-        <div class="deposit-choice">
-          <div class="deposit-result">= 0 VND</div>
-          <div class="deposit-units-label">Đơn vị tính là 1000</div>
-          <div class="deposit-buttons">
-            <button>50</button>
-            <button>100</button>
-            <button>200</button>
-            <button>500</button>
-            <button>1000</button>
-            <button>5000</button>
-            <button>10000</button>
-            <button>20000</button>
-          </div>
-          <div class="deposit-received">
-            Số tiền bạn nhận được: <span>0.00 VND(k)</span>
-          </div>
-        </div>
-        <div class="deposit-warning">
-          <div class="deposit-warning-text">
-            Lời nhắc nhở: Mỗi lần giao dịch không nên vượt quá 300 triệu để bảo
-            đảm ngân hàng của bạn không bị ngân hàng nhà nước kiểm soát,giao
-            dịch dưới 300 triệu bảo đảm mức an toàn , Hãy chú ý bảo mật thông
-            tin của mình.
+            <div class="deposit-link-name">Lịch sử</div>
           </div>
         </div>
 
-        <div class="deposit-carousel">
-          <div class="deposit-carousel-inner">
-            <div class="deposit-carousel-item active">
-              <img src="../assets/images/test.jpe" alt="Slide 1" />
+        <div class="deposit-info">
+          <div class="deposit-info-row">
+            <div class="deposit-account">
+              <div class="deposit-account-icon">
+                <img src="/assets/images/deposit-acc.png" alt />
+              </div>
+              <div class="deposit-account-name">ae123321</div>
             </div>
-            <div class="deposit-carousel-item">
-              <img src="../assets/images/test.jpe" alt="Slide 2" />
-            </div>
-            <div class="deposit-carousel-item">
-              <img src="../assets/images/test.jpe" alt="Slide 3" />
+            <div class="deposit-balance-label">
+              <div class="balance-icon">
+                <img src="/assets/images/ic-balance.png" alt />
+              </div>
+              <div class="deposit-balance-text">Số dư tài khoản</div>
             </div>
           </div>
-          <button class="deposit-carousel-control prev" onclick="prevSlide(event)">
-            ❮
-          </button>
-          <button class="deposit-carousel-control next" onclick="nextSlide(event)">
-            ❯
-          </button>
+          <div class="deposit-info-row flex-end">
+            <div class="balance-value">0.00</div>
+          </div>
         </div>
-      </div>
 
-      <div class="deposit-proceed">
-        <button type="submit" class="btn-proceed" onclick="handleProceed(event)">Tiến hành</button>
-      </div>
+        <div class="deposit-method">
+          
+            <div class="deposit-method-item">
+              <a href="/qrnaptien/qrnaptien.html" class="adeposit">
+              <div class="deposit-method-icon">
+                <img src="/assets/images/congvip.png" alt />
+              </div>
+              <div class="deposit-method-name">CỔNG VIP</div>
+               </a>
+            </div>
+         
+          
+            <div class="deposit-method-item">
+              <a href="/qrnaptien/qrnaptien.html" class="adeposit">
+              <div class="deposit-method-icon">
+                <img src="/assets/images/QR.png" alt />
+              </div>
+              <div class="deposit-method-name">QUÉT MÃ QR</div>
+              </a>
+            </div>
+          
+          <div class="deposit-method-item">
+            <a href="/qrnaptien/qrusdt.html" class="adeposit">
+            <div class="deposit-method-icon">
+              <img src="/assets/images/usdt.png" alt />
+            </div>
+            <div class="deposit-method-name">USDT</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="deposit-input">
+          <div class="deposit-info-header">
+            <span>Hạn mức nạp 50 - 300000</span>
+            <span>Không mất phí</span>
+          </div>
+          <div class="deposit-input-box">
+            <input type="number" placeholder="50 - 300000" name="amount"
+              required id="deposit-amount" />
+            <span class="currency-label">VND(k)</span>
+          </div>
+          <div class="deposit-choice">
+            <div class="deposit-result">= 0 VND</div>
+            <div class="deposit-units-label">Đơn vị tính là 1000</div>
+            <div class="deposit-buttons">
+              <button>50</button>
+              <button>100</button>
+              <button>200</button>
+              <button>500</button>
+              <button>1000</button>
+              <button>5000</button>
+              <button>10000</button>
+              <button>20000</button>
+            </div>
+            <div class="deposit-received">
+              Số tiền bạn nhận được: <span>0.00 VND(k)</span>
+            </div>
+          </div>
+          <div class="deposit-warning">
+            <div class="deposit-warning-text">
+              Lời nhắc nhở: Mỗi lần giao dịch không nên vượt quá 300 triệu để
+              bảo
+              đảm ngân hàng của bạn không bị ngân hàng nhà nước kiểm soát,giao
+              dịch dưới 300 triệu bảo đảm mức an toàn , Hãy chú ý bảo mật thông
+              tin của mình.
+            </div>
+          </div>
+
+          <div class="deposit-carousel">
+            <div class="deposit-carousel-inner">
+              <div class="deposit-carousel-item active">
+                <img src="../assets/images/test.jpe" alt="Slide 1" />
+              </div>
+              <div class="deposit-carousel-item">
+                <img src="../assets/images/test.jpe" alt="Slide 2" />
+              </div>
+              <div class="deposit-carousel-item">
+                <img src="../assets/images/test.jpe" alt="Slide 3" />
+              </div>
+            </div>
+            <button class="deposit-carousel-control prev"
+              onclick="prevSlide(event)">
+              ❮
+            </button>
+            <button class="deposit-carousel-control next"
+              onclick="nextSlide(event)">
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="deposit-proceed">
+          <button type="submit" class="btn-proceed"
+            onclick="handleProceed(event)">Tiến hành</button>
+        </div>
       </form>
     </div>
     <script src="/assets/js/deposit.js"></script>
