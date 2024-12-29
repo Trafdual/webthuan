@@ -230,10 +230,11 @@ body {
   cursor: pointer;
 }
 
-.deposit-buttons button:focus {
+.deposit-buttons button.active {
   color: #00aae6;
   border-color: #00aae6;
 }
+
 
 .deposit-received {
   font-size: 12px;

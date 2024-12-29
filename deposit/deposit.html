@@ -113,17 +113,17 @@
               <img src="../assets/images/test.jpe" alt="Slide 3" />
             </div>
           </div>
-          <button class="deposit-carousel-control prev" onclick="prevSlide()">
+          <button class="deposit-carousel-control prev" onclick="prevSlide(event)">
             ❮
           </button>
-          <button class="deposit-carousel-control next" onclick="nextSlide()">
+          <button class="deposit-carousel-control next" onclick="nextSlide(event)">
             ❯
           </button>
         </div>
       </div>
 
       <div class="deposit-proceed">
-        <button type="submit" class="btn-proceed">Tiến hành</button>
+        <button type="submit" class="btn-proceed" onclick="handleProceed(event)">Tiến hành</button>
       </div>
       </form>
     </div>

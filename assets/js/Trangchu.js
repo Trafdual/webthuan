@@ -104,30 +104,30 @@ document.addEventListener('DOMContentLoaded', function () {
   tysoCategory.classList.add('active')
   tysoCategory.click()
 })
-function toggleSidebar () {
-  var sidebar = document.getElementById('sidebar')
-  var overlay = document.getElementById('overlay')
+// function toggleSidebar () {
+//   var sidebar = document.getElementById('sidebar')
+//   var overlay = document.getElementById('overlay')
 
-  var isLargeScreen = window.matchMedia('(min-width: 450px)').matches
+//   var isLargeScreen = window.matchMedia('(min-width: 450px)').matches
 
-  if (sidebar.classList.contains('show')) {
-    sidebar.classList.remove('show')
-    overlay.classList.remove('show')
+//   if (sidebar.classList.contains('show')) {
+//     sidebar.classList.remove('show')
+//     overlay.classList.remove('show')
 
-    if (isLargeScreen) {
-      sidebar.style.opacity = 0
-      sidebar.style.transform = 'translateX(150px)'
-    }
-  } else {
-    sidebar.classList.add('show')
-    overlay.classList.add('show')
+//     if (isLargeScreen) {
+//       sidebar.style.opacity = 0
+//       sidebar.style.transform = 'translateX(150px)'
+//     }
+//   } else {
+//     sidebar.classList.add('show')
+//     overlay.classList.add('show')
 
-    if (isLargeScreen) {
-      sidebar.style.opacity = 1
-      sidebar.style.transform = 'translateX(450px)'
-    }
-  }
-}
+//     if (isLargeScreen) {
+//       sidebar.style.opacity = 1
+//       sidebar.style.transform = 'translateX(450px)'
+//     }
+//   }
+// }
 
 function updateProgress () {
   document.querySelectorAll('.thanh').forEach(thanh => {
