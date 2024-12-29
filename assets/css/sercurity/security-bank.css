@@ -1,18 +1,24 @@
 body {
     margin: 0;
     overflow: hidden;
+    padding: 0;
+    background-color: gray;
 }
 
-.cashout-container {
-
+.security-bank-container {
     background-color: #fff;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    max-width: 450px;
 }
 
-.cashout-header {
+.security-bank-header {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -21,35 +27,35 @@ body {
     background: linear-gradient(180deg, #00aae6, #0084e6);
 }
 
-.cashout-ic-back img {
+.security-bank-icback img {
     width: 24px;
     height: 24px;
     cursor: pointer;
 }
 
-.cashout-header .cashout-title {
+.security-bank-header .security-bank-title {
     flex-grow: 1;
     font-size: 20px;
     text-align: center;
 }
 
-.cashout-input {
+.security-bank-input {
     width: 85%;
     margin: 16px auto 0 auto;
 }
 
-.cashout-input .form-group {
+.security-bank-input .bank-form-group {
     margin-bottom: 20px;
 }
 
-.cashout-input label {
+.security-bank-input label {
     display: block;
     margin-bottom: 5px;
     color: #666;
 }
 
-.cashout-input input,
-.cashout-input select {
+.security-bank-input input,
+.security-bank-input select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -60,7 +66,7 @@ body {
 }
 
 
-.cashout-input small {
+.security-bank-input small {
     color: #e94951;
     font-weight: bold;
     font-size: 14px;
@@ -68,14 +74,14 @@ body {
     display: block;
 }
 
-.cashout-input .form-group {
+.security-bank-input .bank-form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 
-.cashout-input .cashout-captcha-group {
+.security-bank-input .bank-captcha-group {
     display: flex;
     flex-direction: row;
     border: 1px solid #ddd;
@@ -83,16 +89,16 @@ body {
     border-radius: 5px;
 }
 
-.cashout-captcha-input {
+.bank-captcha-input {
     flex: 1;
 }
 
-.cashout-captcha-input input {
+.bank-captcha-input input {
     border: none;
     outline: none;
 }
 
-.cashout-captcha-display {
+.bank-captcha-display {
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -106,7 +112,7 @@ body {
 
 }
 
-.cashout-captcha-char {
+.bank-captcha-char {
     font-size: 20px;
 }
 
@@ -119,7 +125,7 @@ body {
     transition: transform 0.2s;
 }
 
-.update-button {
+.bank-submit-button {
     padding: 10px 20px;
     background: linear-gradient(180deg, #00aae6, #0084e6);
     border: none;
