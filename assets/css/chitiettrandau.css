@@ -146,14 +146,18 @@ body {
 }
 
 .m-tab button {
-  background: linear-gradient(50deg, #3c97ff, #00abe5);
-  color: white;
+  background: rgb(220, 220, 220);
   border: none;
   padding: 0 0.625rem;
   line-height: 1.6875rem;
   border-radius: 20px;
   display: inline-block;
   white-space: nowrap;
+}
+
+.m-tab button.active {
+  background: linear-gradient(50deg, #3c97ff, #00abe5);
+  color: white;
 }
 
 @media screen and (min-width: 450px) {

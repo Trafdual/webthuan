@@ -1,22 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('input-sotien')
   const modal = document.getElementById('modal')
   const closeModalButton = document.querySelector('.close-modal')
   const itemNghichElements = document.querySelectorAll('.item-nghich')
+  const buttons = document.querySelectorAll('.options button')
+  const buttonitem = document.querySelectorAll('.m-tab-item')
+
+
+  const btnhuy = document.querySelector('.btnhuy')
   itemNghichElements.forEach(item => {
     item.addEventListener('click', () => {
       modal.classList.remove('hidden')
     })
   })
   closeModalButton.addEventListener('click', () => {
+    input.value = ''
+    buttons.forEach(btn => btn.classList.remove('active'))
     modal.classList.add('hidden')
   })
+  btnhuy.addEventListener('click', e => {
+    e.preventDefault()
+    input.value = ''
+    buttons.forEach(btn => btn.classList.remove('active'))
+    modal.classList.add('hidden')
+  })
+
   modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.classList.add('hidden')
     }
   })
-})
 
+  
+  buttonitem.forEach(button => {
+    button.addEventListener('click', () => {
+      buttonitem.forEach(btn => btn.classList.remove('active'))
+      button.classList.add('active')
+    })
+  })
+})
 
 function dinhDangThoiGian (giay) {
   const gio = Math.floor(giay / 3600)
