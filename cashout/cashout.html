@@ -19,6 +19,7 @@
 
                 <div class="cashout-title">Rút tiền</div>
             </div>
+<<<<<<< HEAD
 
             <div class="cashout-input">
                 <div class="form-group">
@@ -62,10 +63,60 @@
                         <span class="cashout-captcha-char">5</span>
                         <span class="cashout-captcha-char">9</span>
                         <button class="refresh-button">&#x21bb;</button>
+=======
+            <form action>
+                <div class="cashout-input">
+                    <div class="form-group">
+                        <label for="bank-select">
+                            Chọn ngân hàng (<span>*</span>)
+                        </label>
+                        <select id="bank-select" required>
+                            <option value="" disabled selected>Chọn ngân hàng</option>
+                            <option value="nhnn">Ngân hàng nhà nước
+                                (NHNN)</option>
+                        </select>
+>>>>>>> c2793b213709abf7b0f4b48d4278f0cab4cf451f
                     </div>
-                </div>
 
-                <button type="submit" class="update-button">Cập nhật</button>
+                    <div class="form-group">
+                        <label for="account-number">
+                            Số tài khoản (<span>*</span>)
+                        </label>
+                        <input type="text" id="account-number"
+                            placeholder="Số tài khoản nhận tiền" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-owner">
+                            Chủ tài khoản (<span>*</span>)
+                        </label>
+                        <input type="text" id="account-owner"
+                            placeholder="Tên trên tài khoản ngân hàng" required/>
+                        <small>
+                            Bạn không thể chỉnh sửa được thông tin chủ tài
+                            khoản,
+                            vui lòng liên hệ quản trị viên nếu muốn thay
+                            đổi
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="captcha-input">Vui lòng nhập mã xác
+                            nhận</label>
+                        <div class="captcha-container">
+                            <input type="text" id="captcha-input"
+                                placeholder="Vui lòng nhập mã xác nhận" required>
+                            <div class="captcha-image">
+                                <span>8u895</span>
+                                <button class="refresh-button">&#x21bb;</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="update-button">Cập
+                        nhật</button>
+                </form>
             </div>
         </div>
 

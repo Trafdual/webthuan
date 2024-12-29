@@ -86,14 +86,20 @@
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  justify-content: center;
 }
 .sotien p {
   margin: 0;
 }
-.sotien div {
+.sotien input {
   padding: 5px;
   border-radius: 5px;
   background-color: #cacaca;
+  border: none;
+  outline: none;
+  width: 70%;
+  font-size: 13px;
+  text-align: center;
 }
 .options {
   margin-top: 10px;
@@ -115,6 +121,10 @@
   cursor: pointer;
   text-align: center;
   font-size: 14px;
+}
+.options button.active{
+    background-color: #00abe5;
+    color: white;
 }
 
 .divtyle{

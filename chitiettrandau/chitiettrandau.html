@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../assets/css/navbar.css">
         <link rel="stylesheet" href="../assets/css/chitiettrandau.css">
         <link rel="stylesheet" href="/assets/css/modal.css">
+
         <title>Trận đấu</title>
     </head>
     <body>
@@ -53,12 +54,12 @@
                 <div class="divnghichtyso">
                     <div class="m-tab">
                         <button class="m-tab-item active">FT Tỷ số</button>
-                        <button class="m-tab-item active">FT Chẵn lẻ</button>
-                        <button class="m-tab-item active">FT Thắng Hòa
+                        <button class="m-tab-item">FT Chẵn lẻ</button>
+                        <button class="m-tab-item">FT Thắng Hòa
                             Thua</button>
-                        <button class="m-tab-item active">HT Tỷ số</button>
-                        <button class="m-tab-item active">H2T Tỷ số</button>
-                        <button class="m-tab-item active">HT Thắng Hòa
+                        <button class="m-tab-item">HT Tỷ số</button>
+                        <button class="m-tab-item">H2T Tỷ số</button>
+                        <button class="m-tab-item">HT Thắng Hòa
                             Thua</button>
                     </div>
                     <div class="tieudenghich">
@@ -116,6 +117,7 @@
                         <p>0:0</p>
                         <p>@2.22%</p>
                     </div>
+
                     <div class="teamtime">
                         <img src="/assets/images/doi1.jpe" alt>
                         <div class="ngaygio">
@@ -125,44 +127,48 @@
                         </div>
                         <img src="/assets/images/doi2.webp" alt>
                     </div>
-                    <div class="sotien">
-                        <p>Số tiền:</p>
-                        <div>Hạn mức một giao dịch tối thiểu 10 coin</div>
-                    </div>
-
-                    <div class="options">
-                        <button>200</button>
-                        <button>500</button>
-                        <button>1,000</button>
-                        <button>2,000</button>
-                        <button>5,000</button>
-                        <button>Toàn bộ</button>
-                    </div>
-                    <div class="divtyle">
-                        <div class="tieudetyle">
-                            <p>Tỷ lệ thắng</p>
-                            <p>Lợi nhuận kì vọng</p>
-                            <p>Phí thủ tục</p>
-                            <p>Lợi nhuận ròng</p>
-                        </div>
-                        <div class="tyle">
-                            <p>x2.22%</p>
-                            <p>0</p>
-                            <p>0</p>
-                            <p>0</p>
+                    <form>
+                        <div class="sotien">
+                            <p>Số tiền:</p>
+                            <input
+                                placeholder="Hạn mức một giao dịch tối thiểu 10 coin"
+                                id="input-sotien" disabled required/>
                         </div>
 
-                    </div>
-                    <div class="btnmodal">
-                        <button class="btnhuy" id="btnhuy">Hủy bỏ</button>
-                        <button class="place-bet">Đặt cược</button>
-                    </div>
-                    
+                        <div class="options">
+                            <button>200</button>
+                            <button>500</button>
+                            <button>1,000</button>
+                            <button>2,000</button>
+                            <button>5,000</button>
+                            <button>Toàn bộ</button>
+                        </div>
+                        <div class="divtyle">
+                            <div class="tieudetyle">
+                                <p>Tỷ lệ thắng</p>
+                                <p>Lợi nhuận kì vọng</p>
+                                <p>Phí thủ tục</p>
+                                <p>Lợi nhuận ròng</p>
+                            </div>
+                            <div class="tyle">
+                                <p>x2.22%</p>
+                                <p>0</p>
+                                <p>0</p>
+                                <p>0</p>
+                            </div>
+
+                        </div>
+                        <div class="btnmodal">
+                            <button class="btnhuy" id="btnhuy">Hủy bỏ</button>
+                            <button type="submit" class="place-bet">Đặt cược</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
         <div class="navbar"></div>
         <script src="../assets/js/navbar.js"></script>
         <script src="../assets/js/chitiettrandau.js"></script>
+        <script src="/assets/js/modal.js"></script>
     </body>
 </html>

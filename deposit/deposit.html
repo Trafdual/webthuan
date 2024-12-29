@@ -7,6 +7,7 @@
     <title>Deposit</title>
   </head>
   <body>
+    <form action="">
     <div class="deposit-container">
       <div class="deposit-header">
         <a href="/trangchu/trangchu.html">
@@ -71,7 +72,7 @@
           <span>Không mất phí</span>
         </div>
         <div class="deposit-input-box">
-          <input type="number" placeholder="50 - 300000" />
+          <input type="number" placeholder="50 - 300000" required id="deposit-amount"/>
           <span class="currency-label">VND(k)</span>
         </div>
         <div class="deposit-choice">
@@ -122,8 +123,10 @@
       </div>
 
       <div class="deposit-proceed">
-        <div class="btn-proceed">Tiến hành</div>
+        <button type="submit" class="btn-proceed">Tiến hành</button>
       </div>
+      </form>
     </div>
+    <script src="/assets/js/deposit.js"></script>
   </body>
 </html>

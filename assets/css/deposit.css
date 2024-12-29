@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow-y: auto;
 }
 
 .deposit-header {
@@ -159,9 +160,9 @@ body {
 }
 
 .deposit-input {
-  height: 100%;
   padding: 15px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .deposit-info-header {
@@ -312,6 +313,7 @@ body {
   font-style: normal;
   font-weight: 300;
   height: 44px;
+  width: 100%;
 }
 
 @media screen and (min-width: 450px) {
