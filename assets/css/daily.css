@@ -244,6 +244,7 @@ body,html {
   background: #3b82f6;
 }
 .notification-container{
+  z-index: 10000;
   display: flex;
   justify-content: center;
 }

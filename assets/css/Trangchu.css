@@ -151,6 +151,7 @@ body {
 
 .footer {
   margin-bottom: 70px;
+  padding-bottom: 65px;
   padding: 5px;
 }
 
@@ -234,6 +235,8 @@ body {
   }
   .footer {
     margin-bottom: 65px;
+  padding-bottom: 65px;
+
   }
   .marquee-container {
     width: unset !important;
