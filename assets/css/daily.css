@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,6 @@ body,html {
   display: flex;
   flex-direction: column;
   height: 100%;
-  
 }
 
 .container {
@@ -39,7 +39,7 @@ body,html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-.name-daily{
+.name-daily {
   font-size: 20px;
 }
 
@@ -60,26 +60,24 @@ body,html {
   height: 30px;
 }
 .container-name {
-  position: relative; 
-  display: inline-block; 
+  position: relative;
+  display: inline-block;
   height: 30px;
   overflow: hidden;
 }
 
 .gift {
-  display: block; 
-  width: 100%; 
-
-
+  display: block;
+  width: 100%;
 }
 
 .username {
   position: absolute;
   color: red;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  font-weight: bold; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
   pointer-events: none;
 }
 
@@ -89,9 +87,9 @@ body,html {
   border-radius: 4px;
   font-size: 14px;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 2px; 
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
   color: white;
 }
 
@@ -103,7 +101,7 @@ body,html {
 .link-section {
   margin-bottom: 16px;
 }
-.link-section h4{
+.link-section h4 {
   color: #7189ac;
   text-align: center;
   margin: 0;
@@ -141,7 +139,7 @@ body,html {
   border-radius: 8px;
   padding: 15px;
 }
-.qr-text-copy{
+.qr-text-copy {
   color: #777272;
   display: flex;
   font-size: 14px;
@@ -194,7 +192,6 @@ body,html {
   justify-content: space-between;
   align-items: center;
   padding: 4px 0;
-
 }
 
 .row span {
@@ -211,17 +208,17 @@ body,html {
   display: flex;
   color: #97a7fc;
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
-.nhom{
+.nhom {
   display: grid;
   padding-right: 15px;
 }
-.icon-copy{
+.icon-copy {
   height: 15px;
   width: 20px;
 }
-.icon-gr{
+.icon-gr {
   background-color: #ececec;
   border-radius: 8px;
   padding: 15px;
@@ -243,37 +240,7 @@ body,html {
 .menu button:hover {
   background: #3b82f6;
 }
-.notification-container{
-  z-index: 10000;
-  display: flex;
-  justify-content: center;
-}
-.notification {
-  position: fixed;
-  top: 10px;
-  background-color: #e6f7ff;
-  color: #1890ff;
-  padding: 10px 20px;
-  border: 1px solid #91d5ff;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-
-.notification.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.notification.hidden {
-  display: none;
-}
 @media screen and (min-width: 450px) {
   body {
     margin: 0 auto;
@@ -281,4 +248,3 @@ body,html {
     background-color: gray;
   }
 }
-
