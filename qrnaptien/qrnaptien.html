@@ -8,6 +8,11 @@
     </head>
     <body>
         <div class="container">
+            <div class="notification-container">
+                <div id="notification" class="notification hidden">
+                  <p>Thông báo: Đã sao chép dữ liệu vào clipboard!</p>
+                </div>
+              </div>
             <div class="header-qr">
                 <div class="header-content">
                     <a href="/deposit/deposit.html">
@@ -31,19 +36,20 @@
                     <img src="/assets/images/maqr.png" alt>
                     <div class="uniform">
                         <h3>Hoặc chuyển tiền theo nội dung</h3>
-                        <p>Số tài khoản: <b>27051996</b><img
-                                src="/assets/images/copy.png" alt></p>
+                        <p>Số tài khoản: <b id="text-3">27051996</b><img
+                                src="/assets/images/copy.png" class="icon-copy" data-target="text-3"></p>
                         <p>Ngân hàng: <b>Mbbank</b></p>
-                        <p>Chủ tài khoản: <b>CTY TNHH CONG NGHE 586</b><img
-                                src="/assets/images/copy.png" alt></p>
-                        <p>Số tiền: <b id="amountdisplay">100,000</b><img
-                                src="/assets/images/copy.png" alt></p>
-                        <p>Nội dung: <b>7956D035</b><img
-                                src="/assets/images/copy.png" alt></p>
+                        <p>Chủ tài khoản: <b id="text-4">CTY TNHH CONG NGHE 586</b><img
+                                src="/assets/images/copy.png" class="icon-copy" data-target="text-4"></p>
+                        <p>Số tiền: <b id="amountdisplay">100,000</b></p>
+                        <p>Nội dung: <b id="text-5">7956D035</b><img
+                                src="/assets/images/copy.png" class="icon-copy" data-target="text-5"></p>
                     </div>
                 </div>
             </div>
         </div>
+  <script src="/assets/js/daily.js"></script>
+
         <script src="/assets/js/qrnaptien.js"></script>
     </body>
 </html>

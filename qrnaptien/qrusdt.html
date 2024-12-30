@@ -8,6 +8,11 @@
     </head>
     <body>
         <div class="container">
+            <div class="notification-container">
+                <div id="notification" class="notification hidden">
+                  <p>Thông báo: Đã sao chép dữ liệu vào clipboard!</p>
+                </div>
+              </div>
             <div class="header-qr">
                 <div class="header-content">
                     <a href="/deposit/deposit.html">
@@ -31,13 +36,14 @@
                     <img src="/assets/images/mausdt.png" alt>
                     <div class="uniform">
                         <p>Địa chỉ nhận USDT:
-                            <b>0xaf2ef59028b28896de2e4d7806f49b7502395bef</b><img
-                                src="/assets/images/copy.png" alt></p>
+                            <b id="text-6">0xaf2ef59028b28896de2e4d7806f49b7502395bef</b><img
+                                src="/assets/images/copy.png" class="icon-copy" data-target="text-6"></p>
                         <p>Mạng lưới: <b>BEP20</b></p>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="/assets/js/daily.js"></script>
         <script src="/assets/js/qrnaptien.js"></script>
     </body>
 </html>
