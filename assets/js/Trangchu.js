@@ -64,6 +64,7 @@ function loadContent (category, filePath) {
       if (category === 'tyso') {
         updateProgress()
         btntabscore()
+        Search()
       }
     })
     .catch(error => {
@@ -175,3 +176,47 @@ function btntabscore () {
     activateTab(btnLichThiDau, btnKetQua)
   })
 }
+
+function removeVietnameseTones (str) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd') 
+    .replace(/Đ/g, 'D')
+    .toLowerCase()
+}
+
+function Search () {
+  const inputSearch = document.querySelector('.inputtk input')
+  const items = document.querySelectorAll('.divitemtyso')
+
+  inputSearch.addEventListener('input', function () {
+    const searchText = removeVietnameseTones(
+      inputSearch.value.trim().toLowerCase()
+    )
+
+    items.forEach(item => {
+      const titleElement = item.querySelector('.tieudescore h4')
+      const teamElements = item.querySelectorAll('.doibong p')
+
+      const titleText = titleElement
+        ? removeVietnameseTones(titleElement.textContent.toLowerCase())
+        : '' 
+      const teamTexts = Array.from(teamElements).map(team =>
+        removeVietnameseTones(team.textContent.toLowerCase())
+      )
+
+      const matchesTitle = titleText.includes(searchText)
+      const matchesTeam = teamTexts.some(teamText =>
+        teamText.includes(searchText)
+      )
+
+      if (matchesTitle || matchesTeam) {
+        item.style.display = 'block'
+      } else {
+        item.style.display = 'none'
+      }
+    })
+  })
+}
+
