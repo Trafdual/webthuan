@@ -217,7 +217,13 @@ body {
   line-height: 1.375rem;
   font-size: 14px;
 }
-
+.m-th2 p {
+  margin: 0;
+  font-size: 12px;
+}
+.box-height{
+  height: 200px;
+}
 .table-container {
   overflow-y: auto;
 
@@ -238,7 +244,6 @@ thead th {
   top: 0;
   z-index: 1;
   text-align: center;
-  padding: 8px;
   border-bottom: 1px solid #ddd;
 }
 
