@@ -67,6 +67,7 @@ body {
   border: none;
   outline: none;
   flex: 1;
+  font-size: 16px;
 }
 
 .login-warning {

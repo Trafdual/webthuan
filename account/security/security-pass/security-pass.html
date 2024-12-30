@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/sercurity/security-pass.css">
-    <title>Đổi mật khẩu</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/sercurity/security-pass.css">
+        <title>Đổi mật khẩu</title>
+    </head>
 
-<body>
-    <div class="security-pass-container">
-        <div class="security-pass-header">
-            <a href="../security.html">
-            <div class="pass-back-button">
-                <img src="/assets/images/back.png" alt="">
+    <body>
+        <div class="security-pass-container">
+            <div class="security-pass-header">
+                <a href="../security.html">
+                    <div class="pass-back-button">
+                        <img src="/assets/images/back.png" alt>
+                    </div>
+                </a>
+                <div class="security-pass-text">Đổi mật khẩu đăng nhập</div>
+                <div></div>
             </div>
-            </a>
-            <div class="security-pass-text">Đổi mật khẩu đăng nhập</div>
+            <form action>
+                <div class="security-pass-form">
+                    <div class="pass-form-group">
+                        <div class="pass-form-input">
+                            <input type="password" id="old-password"
+                                placeholder=" " required
+                                autocomplete="new-password">
+                            <label for="old-password"><span>*</span> Mật khẩu
+                                cũ</label>
+                            <div class="hide-pass-img"><img
+                                    src="/assets/images/ic_hidepass.png"
+                                    alt></div>
+                        </div>
+                    </div>
+
+                    <div class="pass-form-group">
+                        <div class="pass-form-input">
+                            <input type="password" id="new-password"
+                                placeholder=" " required
+                                autocomplete="new-password">
+                            <label for="new-password"><span>*</span> Mật khẩu
+                                mới</label>
+                            <div class="hide-pass-img"><img
+                                    src="/assets/images/ic_hidepass.png"
+                                    alt></div>
+                        </div>
+                        <div class="pass-note">
+                            <div class="note-ic"><img
+                                    src="/assets/images/ic-info.png" alt></div>
+                            Mật khẩu phải có 8-20 chữ và số (Bao gồm các ký tự
+                            đặc biệt)
+                        </div>
+                    </div>
+
+                    <div class="pass-form-group">
+                        <div class="pass-form-input">
+                            <input type="password" id="confirm-password"
+                                placeholder=" " required
+                                autocomplete="new-password">
+                            <label for="confirm-password"><span>*</span> Xác
+                                nhận mật khẩu mới</label>
+                            <div class="hide-pass-img"><img
+                                    src="/assets/images/ic_hidepass.png"
+                                    alt></div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="pass-submit-button">Ấn Xác
+                        Nhận</button>
+                </form>
+            </div>
         </div>
-        <div class="security-pass-form">
-            <div class="pass-form-group">
-                <label for="old-password"><span>*</span> Mật khẩu cũ</label>
-                <div class="pass-form-input">
-                    <input type="password" id="old-password" autocomplete="new-password" placeholder="Nhập mật khẩu cũ">
-                    <div class="hide-pass-img"><img src="/assets/images/ic_hidepass.png" alt=""></div>
-                </div>
-            </div>
-
-            <div class="pass-form-group">
-                <label for="new-password"><span>*</span> Mật khẩu mới</label>
-                <div class="pass-form-input">
-                    <input type="password" id="new-password" autocomplete="new-password"
-                        placeholder="Nhập mật khẩu mới">
-                    <div class="hide-pass-img"><img src="/assets/images/ic_hidepass.png" alt=""></div>
-                </div>
-                <div class="pass-note">
-                    <div class="note-ic"><img src="/assets/images/ic-info.png" alt=""></div>
-                    Mật khẩu phải có 8-20 chữ và số (Bao gồm các ký tự đặc biệt)
-                </div>
-            </div>
-
-            <div class="pass-form-group">
-                <label for="confirm-password"><span>*</span> Xác nhận mật khẩu mới</label>
-                <div class="pass-form-input">
-                    <input type="password" id="confirm-password" autocomplete="new-password"
-                        placeholder="Xác nhận mật khẩu mới">
-                    <div class="hide-pass-img"><img src="/assets/images/ic_hidepass.png" alt=""></div>
-                </div>
-            </div>
-
-            <button type="submit" class="pass-submit-button">Ấn Xác Nhận</button>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>

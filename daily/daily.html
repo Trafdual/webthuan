@@ -6,15 +6,26 @@
     <title>Quản lý đại lý</title>
     <link rel="stylesheet" href="../assets/css/daily.css" />
     <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/daily/notification.css">
   </head>
 
   <body>
     <div class="container-daily">
+      <!-- notification -->
       <div class="notification-container">
         <div id="notification" class="notification hidden">
-          <p>Thông báo: Đã sao chép dữ liệu vào clipboard!</p>
+          <img src="/assets/images/cskh/iconinfor.png" alt>
+          <div class="divndnotification">
+            <h3>Thông báo</h3>
+            <p class="ndnotification"></p>
+          </div>
+          <div class="close-notifi">x</div>
+          <div class="thanhthoigian">
+            <div class="progress-bar"></div>
+          </div>
         </div>
       </div>
+      <!-- // -->
       <header class="header-daily">
         <div class="name-daily">Quản lý đại lý</div>
       </header>
@@ -23,23 +34,20 @@
           <img
             src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQX2zrwqVMm5lcD277n5WWcPMw7rM9eMj8UIDGHVT-ZbsmRHejE1i6cqPzPi3Hu6w1j3T9u4ZrwgFe3rMU"
             alt="Avatar"
-            class="avatar"
-          />
+            class="avatar" />
           <div class="info">
             <div class="container-name">
               <img
                 src="https://okebet.vin/assets/images/vip.gif"
                 alt="Gift"
-                class="gift"
-              />
+                class="gift" />
               <span class="username">abcabc123</span>
             </div>
             <div class="role">
               <img
                 src="../assets/images/kimcuong.png"
                 alt="Avatar"
-                class="kimcuong"
-              />
+                class="kimcuong" />
               <span>Đại lý</span>
             </div>
           </div>
@@ -48,23 +56,20 @@
         <div class="link-section">
           <h4>Link giới thiệu</h4>
           <div class="link-box">
-            <span class="link-text" id="link-text"
-              >https://okebet.vn/auth/register?code=59085A</span
-            >
+            <span class="link-text"
+              id="link-text">https://okebet.vn/auth/register?code=59085A</span>
             <img
               src="../assets/images/copy.png"
               alt="Copy Icon"
               class="icon-copy"
-              data-target="link-text"
-            />
+              data-target="link-text" />
           </div>
           <div class="qr-section">
             <img
               src="../assets/images/qr_daily.png"
               alt="QR Code"
               class="qr-code"
-              id="qr-code"
-            />
+              id="qr-code" />
             <div class="qr-info">
               <div class="qr-text-copy">
                 <p>
@@ -75,8 +80,7 @@
                   src="../assets/images/copy.png"
                   alt="Copy Icon"
                   class="icon-copy"
-                  data-target="ref-code"
-                />
+                  data-target="ref-code" />
               </div>
               <button class="save-qr" id="save-qr">Lưu mã QR</button>
             </div>
@@ -143,8 +147,7 @@
               <img
                 src="../assets/images/group.png"
                 alt="Avatar"
-                class="icon-gr"
-              />
+                class="icon-gr" />
               <span>Trực thuộc</span>
             </div>
           </a>
@@ -153,8 +156,7 @@
               <img
                 src="../assets/images/group.png"
                 alt="Avatar"
-                class="icon-gr"
-              />
+                class="icon-gr" />
               <span>Đội nhóm</span>
             </div>
           </a>
@@ -163,11 +165,9 @@
               <img
                 src="../assets/images/hoahong.png"
                 alt="Avatar"
-                class="icon-gr"
-              />
+                class="icon-gr" />
               <span>Hoa hồng</span>
-            </div></a
-          >
+            </div></a>
         </div>
       </main>
     </div>
