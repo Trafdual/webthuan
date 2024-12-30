@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/sercurity/security-bank.css">
-    <title>Cập nhật thông tin ngân hàng</title>
-</head>
-<body>
-    <div class="security-bank-container">
-        <div class="security-bank-header">
-            
-                <div class="security-bank-icback">
-                    <img src="/assets/images/ic_back_white.png"
-                        alt="Quay lại" />
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/sercurity/security-bank.css">
+        <title>Cập nhật thông tin ngân hàng</title>
+    </head>
+    <body>
+        <div class="security-bank-container">
+            <div class="security-bank-header">
+                <a href="/account/security/security.html">
+                    <div class="security-bank-icback">
+                        <img src="/assets/images/ic_back_white.png"
+                            alt="Quay lại" />
+                    </div>
+                </a>
+                <div class="security-bank-title">Cập nhật thông tin ngân
+                    hàng</div>
+            </div>
+            <form action>
+                <div class="security-bank-input">
+                    <div class="bank-form-group">
+                        <label for="select-bank">
+                            Chọn ngân hàng (<span>*</span>)
+                        </label>
+                        <select id="select-bank" required>
+                            <option value disabled selected>Chọn ngân
+                                hàng</option>
+                            <option value="nhnn">Ngân hàng nhà nước
+                                (NHNN)</option>
+                        </select>
+                    </div>
 
-            <div class="security-bank-title">Cập nhật thông tin ngân hàng</div>
+                    <div class="bank-form-group">
+                        <label for="number-account">
+                            Số tài khoản (<span>*</span>)
+                        </label>
+                        <input type="text" id="number-account"
+                            placeholder="Số tài khoản nhận tiền" required/>
+                    </div>
+
+                    <div class="bank-form-group">
+                        <label for="owner-acc">
+                            Chủ tài khoản (<span>*</span>)
+                        </label>
+                        <input type="text" id="owner-acc"
+                            placeholder="Tên trên tài khoản ngân hàng" required/>
+                        <small>
+                            Bạn không thể chỉnh sửa được thông tin chủ tài
+                            khoản,
+                            vui lòng liên hệ quản trị viên nếu muốn thay
+                            đổi
+                        </small>
+                    </div>
+
+                    <div class="bank-form-group bank-captcha-group">
+                        <div class="bank-captcha-input">
+                            <input type="text"
+                                placeholder="Vui lòng nhập mã xác nhận" required>
+                        </div>
+                        <div class="bank-captcha-display">
+                            <span class="bank-captcha-char">8</span>
+                            <span class="bank-captcha-char">3</span>
+                            <span class="bank-captcha-char">0</span>
+                            <span class="bank-captcha-char">5</span>
+                            <span class="bank-captcha-char">9</span>
+                            <button class="refresh-button">&#x21bb;</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="bank-submit-button">Cập
+                        nhật</button>
+                </div>
+            </form>
         </div>
 
-        <div class="security-bank-input">
-            <div class="bank-form-group">
-                <label for="select-bank">
-                    Chọn ngân hàng (<span>*</span>)
-                </label>
-                <select id="select-bank">
-                    <option value="nhnn">Ngân hàng nhà nước (NHNN)</option>
-                </select>
-            </div>
-
-            <div class="bank-form-group">
-                <label for="number-account">
-                    Số tài khoản (<span>*</span>)
-                </label>
-                <input type="text" id="number-account"
-                    placeholder="Số tài khoản nhận tiền" />
-            </div>
-
-            <div class="bank-form-group">
-                <label for="owner-acc">
-                    Chủ tài khoản (<span>*</span>)
-                </label>
-                <input type="text" id="owner-acc"
-                    placeholder="Tên trên tài khoản ngân hàng" />
-                <small>
-                    Bạn không thể chỉnh sửa được thông tin chủ tài khoản,
-                    vui lòng liên hệ quản trị viên nếu muốn thay
-                    đổi
-                </small>
-            </div>
-
-            <div class="bank-form-group bank-captcha-group">
-                <div class="bank-captcha-input">
-                    <input type="text" placeholder="Vui lòng nhập mã xác nhận">
-                </div>
-                <div class="bank-captcha-display">
-                    <span class="bank-captcha-char">8</span>
-                    <span class="bank-captcha-char">3</span>
-                    <span class="bank-captcha-char">0</span>
-                    <span class="bank-captcha-char">5</span>
-                    <span class="bank-captcha-char">9</span>
-                    <button class="refresh-button">&#x21bb;</button>
-                </div>
-            </div>
-
-            <button type="submit" class="bank-submit-button">Cập nhật</button>
-        </div>
-    </div>
-
-</body>
+    </body>
 </html>

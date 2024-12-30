@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/sercurity/security-bep.css">
-    <title>Cập nhật thông tin ví Crypto</title>
-</head>
-<body>
-    <div class="security-bep-container">
-        <div class="security-bep-header">
-           
-                <div class="security-bep-icback">
-                    <img src="/assets/images/ic_back_white.png"
-                        alt="Quay lại" />
-                </div>
-
-            <div class="security-bep-title">Cập nhật ví Crypto của bạn</div>
-        </div>
-
-        <div class="security-bep-input">
-           
-
-            <div class="bep-form-group">
-                <label for="wallet-owner">
-                    Địa chỉ ví (<span>*</span>)
-                </label>
-                <input type="text" id="owner-acc"
-                    placeholder="Địa chỉ ví nhận tiền" />
-                <small>
-                    Chúng tôi hiện hỗ trợ rút USDT về địa chỉ mạng BEP20
-                </small>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/sercurity/security-bep.css">
+        <title>Cập nhật thông tin ví Crypto</title>
+    </head>
+    <body>
+        <div class="security-bep-container">
+            <div class="security-bep-header">
+                <a href="/account/security/security.html">
+                    <div class="security-bep-icback">
+                        <img src="/assets/images/ic_back_white.png"
+                            alt="Quay lại" />
+                    </div>
+                </a>
+                <div class="security-bep-title">Cập nhật ví Crypto của bạn</div>
             </div>
+            <form action>
+                <div class="security-bep-input">
 
-            <div class="bep-form-group bep-captcha-group">
-                <div class="bep-captcha-input">
-                    <input type="text" placeholder="Vui lòng nhập mã xác nhận">
-                </div>
-                <div class="bep-captcha-display">
-                    <span class="bep-captcha-char">8</span>
-                    <span class="bep-captcha-char">3</span>
-                    <span class="bep-captcha-char">0</span>
-                    <span class="bep-captcha-char">5</span>
-                    <span class="bep-captcha-char">9</span>
-                    <button class="refresh-button">&#x21bb;</button>
-                </div>
-            </div>
+                    <div class="bep-form-group">
+                        <label for="wallet-owner">
+                            Địa chỉ ví (<span>*</span>)
+                        </label>
+                        <input type="text" id="owner-acc"
+                            placeholder="Địa chỉ ví nhận tiền" required />
+                        <small>
+                            Chúng tôi hiện hỗ trợ rút USDT về địa chỉ mạng BEP20
+                        </small>
+                    </div>
 
-            <button type="submit" class="bep-submit-button">Cập nhật</button>
+                    <div class="bep-form-group bep-captcha-group">
+                        <div class="bep-captcha-input">
+                            <input type="text"
+                                placeholder="Vui lòng nhập mã xác nhận"
+                                required>
+                        </div>
+                        <div class="bep-captcha-display">
+                            <span class="bep-captcha-char">8</span>
+                            <span class="bep-captcha-char">3</span>
+                            <span class="bep-captcha-char">0</span>
+                            <span class="bep-captcha-char">5</span>
+                            <span class="bep-captcha-char">9</span>
+                            <button class="refresh-button">&#x21bb;</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="bep-submit-button">Cập
+                        nhật</button>
+                </div>
+            </form>
         </div>
-    </div>
-</body>
+    </body>
 </html>

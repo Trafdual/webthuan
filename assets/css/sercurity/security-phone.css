@@ -1,136 +1,136 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: gray;
-
+  margin: 0;
+  overflow: hidden;
+  background-color: gray;
 }
 
 .security-phone-container {
-    max-width: 450px;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff;
-    margin: 0 auto;
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  max-width: 450px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .security-phone-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    color: #fff;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
 }
 
 .security-phone-header .security-phone-icback {
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
 }
 
 .security-phone-header .security-phone-icback img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .security-phone-header .security-phone-text {
-    flex-grow: 1;
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
+  flex-grow: 1;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
 }
 
 .security-phone-form {
-    width: 70%;
-    margin: 16px auto 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 85%;
+  margin: 16px auto 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-form-group {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .phone-form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
 }
 
 .phone-form-group input {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    background-color:transparent;
-    color: #000;
-    box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .phone-captcha-group {
-    display: flex;
-    border: 1px solid #ddd;
-    align-items: center;
-    border-radius: 5px;
+  display: flex;
+  border: 1px solid #ddd;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .phone-captcha-input {
-    flex: 1;
+  flex: 1;
 }
 
-.phone-captcha-input input{
-    border: none;
+.phone-captcha-input input {
+  border: none;
 }
 .phone-captcha-display {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background-color: #7ff;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #7ff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .phone-captcha-char {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .refresh-button {
-    background: none;
-    border: none;
-    color: #67e3f9;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  background: none;
+  border: none;
+  color: #67e3f9;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .phone-submit-button {
-    padding: 10px 20px;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 450px) {
-    body {
-      margin: 0 auto;
-      width: 450px;
-      background-color: gray;
-    }
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
   }
+}
