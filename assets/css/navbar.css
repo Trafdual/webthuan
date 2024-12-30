@@ -11,6 +11,9 @@
   background-color: white;
   height: calc(33px + env(safe-area-inset-bottom, 20px));
 }
+.navbar1 a{
+  flex: 1;
+}
 
 .nav-item {
   display: flex;
@@ -21,6 +24,7 @@
   font-size: 14px;
   transition: color 0.3s ease;
   cursor: pointer;
+
 }
 
 .nav-item:hover {
