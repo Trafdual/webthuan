@@ -15,10 +15,6 @@ body {
   -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .header {
   background: radial-gradient(
     153.87% 153.87% at 50% -53.87%,
@@ -235,6 +231,10 @@ body {
 }
 .arrow {
   cursor: pointer;
+}
+
+.box-height{
+  height: 100px;
 }
 
 @media screen and (min-width: 450px) {
