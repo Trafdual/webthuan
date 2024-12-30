@@ -139,11 +139,11 @@ body {
   background-color: #fafafc;
   cursor: pointer;
 }
-.deposit-method-item:hover{
+.deposit-method-item.selected{
   background-color: #00abe5;
 }
-.deposit-method-item:hover .adeposit .deposit-method-name{
-  color: #fff
+.deposit-method-item.selected .deposit-method-name{
+  color: #fff;
 }
 .adeposit{
   width: 100%;

@@ -70,13 +70,41 @@ function handleProceed (event) {
   event.preventDefault()
 
   const form = document.querySelector('form')
-  if (form.reportValidity()) {
-    form.submit()
-    const amountInput = form.querySelector('input[name="amount"]')
-    const amount = amountInput
-      ? parseInt(amountInput.value, 10) * 1000
-      : 0
+  const selectedMethod = document.querySelector('.deposit-method-item.selected')
+  const amountInput = form.querySelector('input[name="amount"]')
 
-    window.location.href = `../../qrnaptien/qrnaptien.html?amount=${encodeURIComponent(amount)}`
+  if (!selectedMethod) {
+    alert('Vui lòng chọn phương thức nạp tiền.')
+    return
+  }
+
+  if (form.reportValidity()) {
+    const amount = amountInput ? parseInt(amountInput.value, 10) * 1000 : 0
+
+    if (
+      selectedMethod.querySelector('.deposit-method-name').innerText ===
+        'CỔNG VIP' ||
+      selectedMethod.querySelector('.deposit-method-name').innerText ===
+        'QUÉT MÃ QR'
+    ) {
+      window.location.href = `../../qrnaptien/qrnaptien.html?amount=${encodeURIComponent(
+        amount
+      )}`
+    } else if (
+      selectedMethod.querySelector('.deposit-method-name').innerText === 'USDT'
+    ) {
+      window.location.href = `../../qrnaptien/qrusdt.html`
+    }
   }
 }
+
+
+
+document.querySelectorAll('.deposit-method-item').forEach(item => {
+  item.addEventListener('click', function () {
+    document.querySelectorAll('.deposit-method-item').forEach(method => {
+      method.classList.remove('selected')
+    })
+    this.classList.add('selected')
+  })
+})
