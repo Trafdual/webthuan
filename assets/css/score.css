@@ -136,7 +136,7 @@
 .lichtyso {
   width: 100%;
   position: sticky;
-  top: 34px;
+  top: 71px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: white;
@@ -230,6 +230,33 @@
 }
 .ketquatyso h4{
   margin: 0;
+}
+.divinputsearch{
+  position: sticky;
+  top:35px;
+  background-color: white;
+  z-index: 100;
+
+}
+.inputtk{
+  border-radius: 15px;
+  border: 1px solid #00abe5;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.inputtk input{
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.inputtk img{
+  width: 60px;
+
 }
 @media  screen and (min-width: 450px) {
   .doibongketqua{
