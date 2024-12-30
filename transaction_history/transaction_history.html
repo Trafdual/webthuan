@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/transaction_history.css" />
-    <title>Lịch sử giao dịch</title>
-  </head>
-  <body>
-    <div class="transaction-container">
-      <div class="transaction-header">
-        <a href="/account/account.html">
-          <div class="ic-back">
-            <img src="/assets/images/ic_back_white.png" alt="Back" />
-          </div>
-        </a>
-        <div class="transaction-text">Lịch Sử Giao Dịch</div>
-      </div>
 
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Ngày</th>
-              <th>Type</th>
-              <th>Code</th>
-              <th>Số tiền</th>
-              <th>Trạng thái</th>
-            </tr>
-          </thead>
-          <tbody class="container-bang">
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-            <tr>
-              <td>25-12-2024</td>
-              <td>Deposit</td>
-              <td>74ED7188</td>
-              <td>100.000đ</td>
-              <td>Chờ xử lý</td>
-            </tr>
-      
-          </tbody>
-        </table>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/transaction_history.css" />
+  <title>Lịch sử giao dịch</title>
+</head>
+
+<body>
+  <div class="transaction-container">
+    <div class="transaction-header">
+      <a href="/account/account.html">
+        <div class="ic-back">
+          <img src="/assets/images/ic_back_white.png" alt="Back" />
+        </div>
+      </a>
+      <div class="transaction-text">Lịch Sử Giao Dịch</div>
     </div>
-  </body>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Ngày</th>
+            <th>Type</th>
+            <th>Code</th>
+            <th>Số tiền</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody class="container-bang"></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    const sampleData = [
+    {
+    date: "25-12-2024",
+    type: "Deposit",
+    code: "74ED7190",
+    amount: "300.000đ",
+    status: "success",
+  },
+  {
+    date: "25-12-2024",
+    type: "Deposit",
+    code: "74ED7188",
+    amount: "100.000đ",
+    status: "pending",
+  },
+  {
+    date: "25-12-2024",
+    type: "Deposit",
+    code: "74ED7189",
+    amount: "200.000đ",
+    status: "failed",
+  },
+  {
+    date: "25-12-2024",
+    type: "Deposit",
+    code: "74ED7190",
+    amount: "300.000đ",
+    status: "success",
+  },
+];
+    function renderTable(data) {
+      const tableBody = document.querySelector('.container-bang');
+      tableBody.innerHTML = ''; // Xóa nội dung cũ trước khi thêm mới
+
+      data.forEach((transaction) => {
+        // Tạo một hàng mới
+        const row = document.createElement('tr');
+
+        // Thêm các cột
+        row.innerHTML = `
+      <td>${transaction.date}</td>
+      <td>${transaction.type}</td>
+      <td>${transaction.code}</td>
+      <td>${transaction.amount}</td>
+      <td class="status" data-status="${transaction.status}">${getStatusText(transaction.status)}</td>
+    `;
+
+        // Thêm lớp trạng thái dựa trên trạng thái từ dữ liệu mẫu
+        const statusCell = row.querySelector('.status');
+        statusCell.classList.add(transaction.status); // Thêm lớp trạng thái (pending, failed, success)
+
+        // Thêm hàng vào bảng
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Hàm để chuyển trạng thái thành văn bản hiển thị
+    function getStatusText(status) {
+      switch (status) {
+        case 'pending':
+          return 'Chờ xử lý';
+        case 'failed':
+          return 'Thất bại';
+        case 'success':
+          return 'Thành công';
+        default:
+          return 'Không xác định';
+      }
+    }
+
+    // Gọi hàm để render bảng với dữ liệu mẫu
+    renderTable(sampleData);
+
+  </script>
+</body>
+
 </html>
