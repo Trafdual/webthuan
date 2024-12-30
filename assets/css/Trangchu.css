@@ -10,6 +10,7 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 .carousel {
   position: relative;
   width: 100%;
@@ -234,8 +235,8 @@ body {
     background-color: white;
   }
   .footer {
-  margin-bottom: 150px;
-  padding-bottom: 155px;
+  margin-bottom: 10px;
+  padding-bottom: 100px;
   }
   .marquee-container {
     width: unset !important;
