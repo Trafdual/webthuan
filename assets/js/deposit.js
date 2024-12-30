@@ -36,8 +36,13 @@ function prevSlide (e) {
   showSlide(currentIndex - 1)
 }
 
+function next(){
+  showSlide(currentIndex + 1)
+
+}
+
 setInterval(() => {
-  nextSlide()
+  next()
 }, 5000)
 
 buttons.forEach(button => {

@@ -1,147 +1,145 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    background-color: gray;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: gray;
 }
 
 .security-bank-container {
-    background-color: #fff;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    max-width: 450px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-width: 450px;
 }
 
 .security-bank-header {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    padding: 10px 20px;
-    color: #fff;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
 }
 
 .security-bank-icback img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .security-bank-header .security-bank-title {
-    flex-grow: 1;
-    font-size: 20px;
-    text-align: center;
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: center;
 }
 
 .security-bank-input {
-    width: 85%;
-    margin: 16px auto 0 auto;
+  width: 85%;
+  margin: 16px auto 0 auto;
 }
 
 .security-bank-input .bank-form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .security-bank-input label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
 }
 
 .security-bank-input input,
 .security-bank-input select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #000;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-
 .security-bank-input small {
-    color: #e94951;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 5px;
-    display: block;
+  color: #e94951;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
 }
 
 .security-bank-input .bank-form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
 .security-bank-input .bank-captcha-group {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ddd;
-    align-items: center;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .bank-captcha-input {
-    flex: 1;
+  flex: 1;
 }
 
 .bank-captcha-input input {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .bank-captcha-display {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background-color: #7ff;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #7ff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .bank-captcha-char {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .refresh-button {
-    background-color: transparent;
-    border: none;
-    color: #67e3f9;
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.2s;
+  background-color: transparent;
+  border: none;
+  color: #67e3f9;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .bank-submit-button {
-    padding: 10px 20px;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
-
 @media screen and (min-width: 450px) {
-    body {
-        margin: 0 auto;
-        width: 450px;
-        background-color: gray;
-    }
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+  }
 }

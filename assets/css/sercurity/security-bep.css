@@ -1,147 +1,145 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    background-color: gray;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: gray;
 }
 
 .security-bep-container {
-    background-color: #fff;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    max-width: 450px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-width: 450px;
 }
 
 .security-bep-header {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    padding: 10px 20px;
-    color: #fff;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
 }
 
 .security-bep-icback img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .security-bep-header .security-bep-title {
-    flex-grow: 1;
-    font-size: 20px;
-    text-align: center;
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: center;
 }
 
 .security-bep-input {
-    width: 85%;
-    margin: 16px auto 0 auto;
+  width: 85%;
+  margin: 16px auto 0 auto;
 }
 
 .security-bep-input .bep-form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .security-bep-input label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
 }
 
 .security-bep-input input,
 .security-bep-input select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #000;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-
 .security-bep-input small {
-    color: #e94951;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 5px;
-    display: block;
+  color: #e94951;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
 }
 
 .security-bep-input .bep-form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
 .security-bep-input .bep-captcha-group {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ddd;
-    align-items: center;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .bep-captcha-input {
-    flex: 1;
+  flex: 1;
 }
 
 .bep-captcha-input input {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .bep-captcha-display {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background-color: #7ff;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #7ff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .bep-captcha-char {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .refresh-button {
-    background-color: transparent;
-    border: none;
-    color: #67e3f9;
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.2s;
+  background-color: transparent;
+  border: none;
+  color: #67e3f9;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .bep-submit-button {
-    padding: 10px 20px;
-    background: linear-gradient(180deg, #00aae6, #0084e6);
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #00aae6, #0084e6);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
-
 @media screen and (min-width: 450px) {
-    body {
-        margin: 0 auto;
-        width: 450px;
-        background-color: gray;
-    }
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+  }
 }

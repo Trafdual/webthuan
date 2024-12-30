@@ -26,7 +26,8 @@
                             Chọn ngân hàng (<span>*</span>)
                         </label>
                         <select id="bank-select" required>
-                            <option value="" disabled selected>Chọn ngân hàng</option>
+                            <option value disabled selected>Chọn ngân
+                                hàng</option>
                             <option value="nhnn">Ngân hàng nhà nước
                                 (NHNN)</option>
                         </select>
@@ -37,7 +38,7 @@
                             Số tài khoản (<span>*</span>)
                         </label>
                         <input type="text" id="account-number"
-                            placeholder="Số tài khoản nhận tiền" required/>
+                            placeholder="Số tài khoản nhận tiền" required />
                     </div>
 
                     <div class="form-group">
@@ -45,7 +46,8 @@
                             Chủ tài khoản (<span>*</span>)
                         </label>
                         <input type="text" id="account-owner"
-                            placeholder="Tên trên tài khoản ngân hàng" required/>
+                            placeholder="Tên trên tài khoản ngân hàng"
+                            required />
                         <small>
                             Bạn không thể chỉnh sửa được thông tin chủ tài
                             khoản,
@@ -59,7 +61,8 @@
                             nhận</label>
                         <div class="captcha-container">
                             <input type="text" id="captcha-input"
-                                placeholder="Vui lòng nhập mã xác nhận" required>
+                                placeholder="Vui lòng nhập mã xác nhận"
+                                required>
                             <div class="captcha-image">
                                 <span>8u895</span>
                                 <button class="refresh-button">&#x21bb;</button>
@@ -67,11 +70,12 @@
 
                         </div>
                     </div>
-                    <button type="button" class="update-button" onclick="window.location.href='../deposit/rutdposit.html'">Cập nhật</button>
+                    <button type="button" class="update-button"
+                        onclick="handleProceed(event)">Cập nhật</button>
                 </form>
             </div>
         </div>
-
+        <script src="/assets/js/cashout.js"></script>
     </body>
 
 </html>
