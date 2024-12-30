@@ -85,9 +85,9 @@ document.getElementById('nohu').addEventListener('click', function () {
   loadContent('nohu', '../../trangchu/nohu/nohu.html')
 })
 
-document.getElementById('xocdia').addEventListener('click', function () {
-  loadContent('xocdia', '../../trangchu/xocdia/xocdia.html')
-})
+// document.getElementById('xocdia').addEventListener('click', function () {
+//   loadContent('xocdia', '../../trangchu/xocdia/xocdia.html')
+// })
 
 document.getElementById('xoso').addEventListener('click', function () {
   loadContent('xoso', '../../trangchu/xoso/xoso.html')

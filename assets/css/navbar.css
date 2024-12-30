@@ -10,6 +10,7 @@
   left: 0;
   background-color: white;
   height: calc(33px + env(safe-area-inset-bottom, 20px));
+  z-index: 10000;
 }
 .navbar1 a{
   flex: 1;

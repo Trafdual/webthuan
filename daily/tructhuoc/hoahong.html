@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoa hồng</title>
+    <link rel="stylesheet" href="../../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../../assets/css/daily/hoahong.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-app">
+        <a href="../daily.html">    
+          <img
+            src="../../assets/images/backicon.png"
+            alt="Avatar"
+            class="back-icon"
+          />
+        </a>
+        Hoa hồng
+      </div>
+      <div class="header">
+        <div id="processing-tab" class="active">Trực thuộc</div>
+        <div id="completed-tab">Đã hoàn thành</div>
+      </div>
+      <div class="input-container">
+        <div class="date-input" id="date-input">Chọn ngày</div>
+        <div onclick="" class="check-button">Tìm kiếm</div>
+      </div>
+      <div class="calendar-container" id="calendar-container">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <span id="month-year"></span>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-days">
+          <div>Su</div>
+          <div>Mo</div>
+          <div>Tu</div>
+          <div>We</div>
+          <div>Th</div>
+          <div>Fr</div>
+          <div>Sa</div>
+        </div>
+        <div class="calendar-dates" id="calendar-dates"></div>
+      </div>
+      <div class="content" id="processing-content">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr class="th-tructhuoc">
+                <th>User</th>
+                <th>Ngày</th>
+                <th>Đặt cược</th>
+                <th>Hoa hồng</th>
+              </tr>
+            </thead>
+            <tbody class="container-bang">            
+            </tbody>
+          </table>
+        </div>
+        <div class="box-height"></div>
+
+      </div>
+      <div class="content hidden" id="completed-content">
+        <div>
+            <div class="m-th2" style="padding-bottom:10px;">
+                <p>Hoa hồng : 0.00</p>
+                <p>Thanh toán tự động từ 0-2h sáng thứ 2 hàng tuần</p>
+        </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr class="th-tructhuoc">
+                  <th>User</th>
+                  <th>Level</th>
+                  <th>Ngày</th>
+                  <th>Đặt cược</th>
+                  <th>Hoa hồng</th>
+                </tr>
+              </thead>
+              <tbody class="container-bang">
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="box-height"></div>
+        </div>
+      </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+      const tbodyProcessing = document.querySelector("#processing-content .container-bang");
+  const tbodyCompleted = document.querySelector("#completed-content .container-bang");
+
+  for (let i = 1; i <= 100; i++) {
+    let rowProcessing = `
+      <tr>
+        <td>tentoila${i}</td>
+        <td>25-12-2024</td>
+        <td>100.000đ</td>
+        <td>1%</td>
+      </tr>
+    `;
+    tbodyProcessing.innerHTML += rowProcessing;
+
+    let rowCompleted = `
+      <tr>
+        <td>tentoila${i}</td>
+        <td>${i}</td>
+        <td>25-12-2024</td>
+        <td>100.000đ</td>
+        <td>1%</td>
+      </tr>
+    `;
+    tbodyCompleted.innerHTML += rowCompleted;
+  }
+});
+
+    </script>
+    <script src="../../assets/js/betting_history.js"></script>
+    <script src="../../assets/js/daily.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+  </body>
+</html>

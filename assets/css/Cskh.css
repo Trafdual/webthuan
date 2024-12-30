@@ -14,7 +14,9 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
+.container::-webkit-scrollbar {
+  display: none;
+}
 .header {
   background: radial-gradient(
     153.87% 153.87% at 50% -53.87%,
