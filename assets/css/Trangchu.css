@@ -150,7 +150,7 @@ body {
 }
 
 .footer {
-  margin-bottom: 70px;
+  margin-bottom: 150px;
   padding-bottom: 65px;
   padding: 5px;
 }
@@ -234,9 +234,8 @@ body {
     background-color: white;
   }
   .footer {
-    margin-bottom: 65px;
-  padding-bottom: 65px;
-
+  margin-bottom: 150px;
+  padding-bottom: 155px;
   }
   .marquee-container {
     width: unset !important;

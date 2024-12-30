@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/daily/tructhuoc.css" />
+    <title>Đội nhóm</title>
+  </head>
+  <body>
+    <div class="transaction-container">
+      <div class="transaction-header">
+        <a href="/trangchu/trangchu.html">
+          <div class="ic-back">
+            <img src="/assets/images/ic_back_white.png" alt="Back" />
+          </div>
+        </a>
+        <div class="transaction-text">Đội nhóm</div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr class="th-tructhuoc">
+              <th>STT</th>
+              <th>User</th>
+              <th>Ngày giới thiệu</th>
+            </tr>
+          </thead>
+          <tbody class="container-bang">
+            <tr>
+              <td>1</td>
+              <td>tentoila999</td>
+              <td>25-12-2024</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>tentoila999</td>
+                <td>25-12-2024</td>
+              </tr>
+      
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const tableRows = document.querySelectorAll(".container-bang tr");
+          tableRows.forEach((row, index) => {
+            const sttCell = row.querySelector("td:first-child");
+            sttCell.textContent = index + 1; 
+          });
+        });
+    </script>
+
+  </body>
+</html>

@@ -1,141 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý đại lý</title>
+    <link rel="stylesheet" href="../assets/css/daily.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý đại lý</title>
-  <link rel="stylesheet" href="../assets/css/daily.css" />
-  <link rel="stylesheet" href="../assets/css/navbar.css">
-
-</head>
-
-<body>
-  <div class="container-daily">
-    <div class="notification-container">
-      <div id="notification" class="notification hidden">
-        <p>Thông báo: Đã sao chép dữ liệu vào clipboard!</p>
+  <body>
+    <div class="container-daily">
+      <div class="notification-container">
+        <div id="notification" class="notification hidden">
+          <p>Thông báo: Đã sao chép dữ liệu vào clipboard!</p>
+        </div>
       </div>
+      <header class="header-daily">
+        <div class="name-daily">Quản lý đại lý</div>
+      </header>
+      <main class="container">
+        <div class="profile">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQX2zrwqVMm5lcD277n5WWcPMw7rM9eMj8UIDGHVT-ZbsmRHejE1i6cqPzPi3Hu6w1j3T9u4ZrwgFe3rMU"
+            alt="Avatar"
+            class="avatar"
+          />
+          <div class="info">
+            <div class="container-name">
+              <img
+                src="https://okebet.vin/assets/images/vip.gif"
+                alt="Gift"
+                class="gift"
+              />
+              <span class="username">abcabc123</span>
+            </div>
+            <div class="role">
+              <img
+                src="../assets/images/kimcuong.png"
+                alt="Avatar"
+                class="kimcuong"
+              />
+              <span>Đại lý</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-section">
+          <h4>Link giới thiệu</h4>
+          <div class="link-box">
+            <span class="link-text" id="link-text"
+              >https://okebet.vn/auth/register?code=59085A</span
+            >
+            <img
+              src="../assets/images/copy.png"
+              alt="Copy Icon"
+              class="icon-copy"
+              data-target="link-text"
+            />
+          </div>
+          <div class="qr-section">
+            <img
+              src="../assets/images/qr_daily.png"
+              alt="QR Code"
+              class="qr-code"
+              id="qr-code"
+            />
+            <div class="qr-info">
+              <div class="qr-text-copy">
+                <p>
+                  Mã giới thiệu:
+                  <strong class="link-text" id="ref-code">59085A</strong>
+                </p>
+                <img
+                  src="../assets/images/copy.png"
+                  alt="Copy Icon"
+                  class="icon-copy"
+                  data-target="ref-code"
+                />
+              </div>
+              <button class="save-qr" id="save-qr">Lưu mã QR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="card">
+            <span>Trực thuộc</span>
+            <div class="table-container">
+              <div class="row header">
+                <span></span>
+                <span>Hôm nay</span>
+                <span>Hôm qua</span>
+              </div>
+              <div class="row">
+                <span>Hoa hồng</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+              <div class="row">
+                <span>Đăng ký</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+              <div class="row">
+                <span>Hiệu quả</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Đội nhóm</span>
+            <div class="table-container">
+              <div class="row header">
+                <span></span>
+                <span>Hôm nay</span>
+                <span>Hôm qua</span>
+              </div>
+              <div class="row">
+                <span>Hoa hồng</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+              <div class="row">
+                <span>Đăng ký</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+              <div class="row">
+                <span>Hiệu quả</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <a href="./tructhuoc/tructhuoc.html">
+            <div class="nhom">
+              <img
+                src="../assets/images/group.png"
+                alt="Avatar"
+                class="icon-gr"
+              />
+              <span>Trực thuộc</span>
+            </div>
+          </a>
+          <a href="./tructhuoc/doinhom.html">
+            <div class="nhom">
+              <img
+                src="../assets/images/group.png"
+                alt="Avatar"
+                class="icon-gr"
+              />
+              <span>Đội nhóm</span>
+            </div>
+          </a>
+          <a href="./tructhuoc/doinhom.html">
+            <div class="nhom">
+              <img
+                src="../assets/images/hoahong.png"
+                alt="Avatar"
+                class="icon-gr"
+              />
+              <span>Hoa hồng</span>
+            </div></a
+          >
+        </div>
+      </main>
     </div>
-    <header class="header-daily">
-      <div class="name-daily">Quản lý đại lý</div>
-    </header>
-    <main class="container">
-
-      <div class="profile">
-        <img
-          src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQX2zrwqVMm5lcD277n5WWcPMw7rM9eMj8UIDGHVT-ZbsmRHejE1i6cqPzPi3Hu6w1j3T9u4ZrwgFe3rMU"
-          alt="Avatar" class="avatar">
-        <div class="info">
-          <div class="container-name">
-            <img src="https://okebet.vin/assets/images/vip.gif" alt="Gift" class="gift">
-            <span class="username">abcabc123</span>
-          </div>
-          <div class="role">
-            <img src="../assets/images/kimcuong.png" alt="Avatar" class="kimcuong">
-            <span>Đại lý</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="link-section">
-        <h4>Link giới thiệu</h4>
-        <div class="link-box">
-          <span class="link-text" id="link-text">https://okebet.vn/auth/register?code=59085A</span>
-          <img src="../assets/images/copy.png" alt="Copy Icon" class="icon-copy" data-target="link-text">
-        </div>
-        <div class="qr-section">
-          <img src="../assets/images/qr_daily.png" alt="QR Code" class="qr-code" id="qr-code">
-          <div class="qr-info">
-            <div class="qr-text-copy">
-              <p>Mã giới thiệu: <strong class="link-text" id="ref-code">59085A</strong></p>
-              <img src="../assets/images/copy.png" alt="Copy Icon" class="icon-copy" data-target="ref-code">
-            </div>
-            <button class="save-qr" id="save-qr">Lưu mã QR</button>
-          </div>
-        </div>
-      </div>
-      
-
-
-      <div class="stats">
-        <div class="card">
-          <span>Trực thuộc</span>
-          <div class="table-container">
-            <div class="row header">
-              <span></span>
-              <span>Hôm nay</span>
-              <span>Hôm qua</span>
-            </div>
-            <div class="row">
-              <span>Hoa hồng</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-            <div class="row">
-              <span>Đăng ký</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-            <div class="row">
-              <span>Hiệu quả</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <span>Đội nhóm</span>
-          <div class="table-container">
-            <div class="row header">
-              <span></span>
-              <span>Hôm nay</span>
-              <span>Hôm qua</span>
-            </div>
-            <div class="row">
-              <span>Hoa hồng</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-            <div class="row">
-              <span>Đăng ký</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-            <div class="row">
-              <span>Hiệu quả</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu">
-
-        <div class="nhom">
-
-          <img src="../assets/images/group.png" alt="Avatar" class="icon-gr">
-          <span>Trực thuộc</span>
-        </div>
-        <div class="nhom">
-
-          <img src="../assets/images/group.png" alt="Avatar" class="icon-gr">
-          <span>Đội nhóm</span>
-        </div>
-
-        <div class="nhom">
-          <img src="../assets/images/hoahong.png" alt="Avatar" class="icon-gr">
-          <span>Hoa hồng</span>
-
-        </div>
-      </div>
-    </main>
-  </div>
-  <div class="navbar"></div>
-  <script src="../assets/js/daily.js"></script>
-  <script src="../assets/js/navbar.js"></script>
-</body>
-
+    <div class="navbar"></div>
+    <script src="../assets/js/daily.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+  </body>
 </html>
