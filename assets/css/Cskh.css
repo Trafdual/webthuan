@@ -11,9 +11,11 @@ body {
   max-width: 100%;
   margin: 0 auto;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.container::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -249,7 +251,7 @@ body {
   .icon-container {
     padding: 40px;
     padding-left: 5px;
-    padding-right: 5px;
+  padding-right: 5px;
   }
   .danhsachcskh {
     gap: 7px;
