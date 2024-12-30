@@ -136,7 +136,7 @@
 .lichtyso {
   width: 100%;
   position: sticky;
-  top: 67px;
+  top: 71px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: white;
@@ -236,14 +236,14 @@
   top:35px;
   background-color: white;
   z-index: 100;
+
 }
 .inputtk{
-
-  padding: 5px;
   border-radius: 15px;
-  border: 1px solid gray;
+  border: 1px solid #00abe5;
   display: flex;
   align-items: center;
+  padding-left: 5px;
 }
 
 .inputtk input{
@@ -255,8 +255,7 @@
 }
 
 .inputtk img{
-  width: 20px;
-  height: 20px;
+  width: 60px;
 
 }
 @media  screen and (min-width: 450px) {
