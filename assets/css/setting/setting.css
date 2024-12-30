@@ -6,7 +6,7 @@ body {
 }
 
 
-.security-container {
+.setting-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -18,7 +18,7 @@ body {
     max-width: 450px;
 }
 
-.security-header {
+.setting-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,36 +27,37 @@ body {
     background: linear-gradient(180deg, #00aae6, #0084e6);
   }
   
-  .security-header .security-ic-back {
+  .setting-header .setting-ic-back {
     width: 26px;
     height: 26px;
     cursor: pointer;
   
   }
   
-  .security-header .security-ic-back img {
+  .setting-header .setting-ic-back img {
     width: 100%;
     height: 100%;
   }
   
-  .security-header .security-text {
+  .setting-header .setting-text {
     flex-grow: 1;
     margin: 0;
     font-size: 20px;
     text-align: center;
   }
 
-.security-menu {
+.setting-menu {
     background-color: #fff;
     flex: 1;
     overflow: auto;
     padding: 15px 10px;
 }
-.security-menu a{
+
+.setting-menu a {
   text-decoration: none;
-  color: black;
 }
-.security-menu-item {
+
+.setting-menu-item {
     background-color: #f1f1f1;
     width: 100%;
     box-sizing: border-box;
@@ -67,10 +68,20 @@ body {
     padding: 15px 20px;
     border-radius: 5px;
 }
-.menu-item-title {
+.setting-item-title {
   color: #000;
 }
-.menu-item-subtitle {
+
+.setting-ic {
+    width: 20px;
+    height: 20px;
+}
+
+.setting-ic img {
+    width: 100%;
+}
+
+.setting-item-version {
     color: #00aae6;
 }
 
