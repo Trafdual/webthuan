@@ -1,5 +1,3 @@
-
-
 .navbar1 {
   display: flex;
   justify-content: space-around;
@@ -11,7 +9,10 @@
   border-top: 1px solid #007bff;
   left: 0;
   background-color: white;
-
+  height: calc(33px + env(safe-area-inset-bottom, 20px));
+}
+.navbar1 a{
+  flex: 1;
 }
 
 .nav-item {
@@ -23,6 +24,7 @@
   font-size: 14px;
   transition: color 0.3s ease;
   cursor: pointer;
+
 }
 
 .nav-item:hover {
@@ -35,12 +37,12 @@
   margin-bottom: 5px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 450px) {
-  .navbar1{
+  .navbar1 {
     width: 450px;
     left: unset;
   }
