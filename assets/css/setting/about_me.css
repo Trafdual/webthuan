@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -18,6 +18,9 @@ body {
 }
 
 .about-me-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,9 +47,23 @@ body {
   text-align: center;
 }
 .about-me-content {
-    background-color: #fff;
-    padding: 20px 15px;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px 15px;
+  flex: 1;
 }
 .para-about-me {
-    font-size: 14px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    margin: 0 auto;
+    width: 450px;
+    background-color: gray;
+  }
+
+  .about-me-header {
+    width: 450px;
+  }
 }
