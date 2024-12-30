@@ -7,7 +7,7 @@ body {
 .security-phone-container {
   max-width: 450px;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #fff;
   margin: 0 auto;
   overflow: auto;
