@@ -111,9 +111,9 @@ body {
 .demnguoc {
   color: black !important;
 }
-  .body-qr{
-    margin-top: 30px;
-  }
+.body-qr {
+  margin-top: 30px;
+}
 
 @media screen and (min-width: 450px) {
   body {

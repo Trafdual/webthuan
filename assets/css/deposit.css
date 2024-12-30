@@ -139,13 +139,13 @@ body {
   background-color: #fafafc;
   cursor: pointer;
 }
-.deposit-method-item.selected{
+.deposit-method-item.selected {
   background-color: #00abe5;
 }
-.deposit-method-item.selected .deposit-method-name{
+.deposit-method-item.selected .deposit-method-name {
   color: #fff;
 }
-.adeposit{
+.adeposit {
   width: 100%;
   text-decoration: none;
 }
@@ -193,7 +193,7 @@ body {
 
 .deposit-input-box input {
   flex: 1;
-  font-size: 14px;
+  font-size: 16px;
   border: none;
   outline: none;
 }
@@ -244,7 +244,6 @@ body {
   color: #00aae6;
   border-color: #00aae6;
 }
-
 
 .deposit-received {
   font-size: 12px;
@@ -325,6 +324,10 @@ body {
   font-weight: 300;
   height: 44px;
   width: 100%;
+}
+
+.box-height {
+  height: 100px;
 }
 
 @media screen and (min-width: 450px) {

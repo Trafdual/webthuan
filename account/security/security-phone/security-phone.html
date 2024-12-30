@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/sercurity/security-phone.css">
-    <title>Cập nhật số điện thoại</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/sercurity/security-phone.css">
+        <title>Cập nhật số điện thoại</title>
+    </head>
 
-<body>
-    <div class="security-phone-container">
-        <div class="security-phone-header">
-            <a href="/account/security/security.html">
-                <div class="security-phone-icback">
-                    <img src="/assets/images/ic_back_white.png" alt="Back">
-                </div>
-            </a>
-            
-            <div class="security-phone-text">Thay đổi mật khẩu đăng nhập</div>
-        </div>
-
-        <div class="security-phone-form">
-            <div class="phone-form-group">
-                <label for="phone-number">Cập nhật số điện thoại (*)</label>
-                <input type="tel" id="phone-number" placeholder="Nhập số điện thoại của bạn">
+    <body>
+        <div class="security-phone-container">
+            <div class="security-phone-header">
+                <a href="/account/security/security.html">
+                    <div class="security-phone-icback">
+                        <img src="/assets/images/ic_back_white.png" alt="Back">
+                    </div>
+                </a>
+                <div class="security-phone-text">Thay đổi mật khẩu đăng
+                    nhập</div>
             </div>
+            <form action>
+                <div class="security-phone-form">
+                    <div class="phone-form-group">
+                        <label for="phone-number">Cập nhật số điện thoại
+                            (*)</label>
+                        <input type="tel" id="phone-number"
+                            placeholder="Nhập số điện thoại của bạn" required>
+                    </div>
 
-            <div class="phone-form-group phone-captcha-group">
-                <div class="phone-captcha-input">
-                    <input type="text" placeholder="Vui lòng nhập mã xác nhận">
-                </div>
-                <div class="phone-captcha-display">
-                    <span class="phone-captcha-char">8</span>
-                    <span class="phone-captcha-char">3</span>
-                    <span class="phone-captcha-char">0</span>
-                    <span class="phone-captcha-char">5</span>
-                    <span class="phone-captcha-char">9</span>
-                    <button class="refresh-button">&#x21bb;</button>
-                </div>
-            </div>
-            <button type="submit" class="phone-submit-button">Cập nhật</button>
+                    <div class="phone-form-group phone-captcha-group">
+                        <div class="phone-captcha-input">
+                            <input type="text"
+                                placeholder="Vui lòng nhập mã xác nhận" required>
+                        </div>
+                        <div class="phone-captcha-display">
+                            <span class="phone-captcha-char">8</span>
+                            <span class="phone-captcha-char">3</span>
+                            <span class="phone-captcha-char">0</span>
+                            <span class="phone-captcha-char">5</span>
+                            <span class="phone-captcha-char">9</span>
+                            <button class="refresh-button">&#x21bb;</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="phone-submit-button">Cập
+                        nhật</button>
 
+                </div>
+            </form>
         </div>
-
-    </div>
-</body>
+    </body>
 
 </html>
