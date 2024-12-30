@@ -55,19 +55,7 @@
                 <th>Hoa hồng</th>
               </tr>
             </thead>
-            <tbody class="container-bang">
-              <tr>
-                <td>tentoila999</td>
-                <td>25-12-2024</td>
-                <td>100.000đ</td>
-                <td>1%</td>
-              </tr>
-              <tr>
-                <td>tentoila999</td>
-                <td>25-12-2024</td>
-                <td>100.000đ</td>
-                <td>1%</td>
-              </tr>
+            <tbody class="container-bang">            
             </tbody>
           </table>
         </div>
@@ -86,20 +74,7 @@
                 </tr>
               </thead>
               <tbody class="container-bang">
-                <tr>
-                  <td>tentoila999</td>
-                  <td>12</td>
-                  <td>25-12-2024</td>
-                  <td>100.000đ</td>
-                  <td>1%</td>
-                </tr>
-                <tr>
-                  <td>tentoila999</td>
-                  <td>12</td>
-                  <td>25-12-2024</td>
-                  <td>100.000đ</td>
-                  <td>1%</td>
-                </tr>
+                
               </tbody>
             </table>
           </div>
@@ -108,14 +83,10 @@
       </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-  // Chọn <tbody> cho bảng "processing-content"
-  const tbodyProcessing = document.querySelector("#processing-content .container-bang");
-  // Chọn <tbody> cho bảng "completed-content"
+      const tbodyProcessing = document.querySelector("#processing-content .container-bang");
   const tbodyCompleted = document.querySelector("#completed-content .container-bang");
 
-  // Tạo 100 dòng bảng
   for (let i = 1; i <= 100; i++) {
-    // Dòng cho "processing-content"
     let rowProcessing = `
       <tr>
         <td>tentoila${i}</td>
@@ -126,7 +97,6 @@
     `;
     tbodyProcessing.innerHTML += rowProcessing;
 
-    // Dòng cho "completed-content"
     let rowCompleted = `
       <tr>
         <td>tentoila${i}</td>
