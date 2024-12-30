@@ -209,6 +209,10 @@ body {
   line-height: 1.2;
 }
 
+.box-height{
+  height: 100px;
+}
+
 @media screen and (min-width: 450px) {
   body {
     margin: 0 auto;
