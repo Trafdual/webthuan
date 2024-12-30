@@ -11,7 +11,9 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
+.account-container::-webkit-scrollbar {
+  display: none;
+}
 .account-header {
   border-radius: 0 0 30px 30px;
   background: url("../images/van.png") no-repeat center center / cover,
